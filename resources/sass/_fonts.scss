@@ -1,0 +1,35 @@
+// Fonts
+@font-face {
+	font-family: 'BebasNeue-Bold';
+	src: url("../fonts/BebasNeue-Bold.otf");
+	//src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	//url('../fonts/OpenSans-Light.woff') format('woff'),
+	//url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	//url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: auto;
+}
+@font-face {
+	font-family: 'BebasNeue-Light';
+	src: url("../fonts/BebasNeue-Light.otf");
+	//src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	//url('../fonts/OpenSans-Light.woff') format('woff'),
+	//url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	//url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+@font-face {
+	font-family: 'MellowLine-Regular';
+	src: url("../fonts/MellowLine-Regular.otf");
+	//src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	//url('../fonts/OpenSans-Light.woff') format('woff'),
+	//url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	src: url('../fonts/MellowLine-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+

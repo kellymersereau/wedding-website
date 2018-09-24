@@ -1,0 +1,13 @@
+body, input, button, select, textarea, a {
+	font-family: $BebasNeue-Light;
+	font-size: 18px;
+	line-height: 1.4;
+}
+body {
+	background-color: $body-bg;
+	background: $body-bg;
+	cursor: default;
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0;
+}
