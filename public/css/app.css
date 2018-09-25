@@ -74,10 +74,34 @@ body {
   color: #000000;
 }
 
+.placeholder-hero h1.error-code {
+  font-size: 4em;
+  display: block;
+}
+
 .placeholder-hero h1 img {
   padding-left: 10px;
   height: 35px;
   width: auto;
+}
+
+.placeholder-hero h2 {
+  font-size: 2em;
+  color: #4e5357;
+  display: block;
+  text-align: center;
+}
+
+.placeholder-hero a {
+  font-size: 2em;
+  line-height: 1.5;
+  color: #6574cd;
+  display: block;
+  text-align: center;
+}
+
+.placeholder-hero a:hover {
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -86,9 +110,22 @@ body {
     padding: 0 50px;
   }
 
+  .placeholder-hero h1.error-code {
+    font-size: 7em;
+  }
+
   .placeholder-hero h1 img {
     height: 60px;
     width: auto;
+  }
+
+  .placeholder-hero h2 {
+    font-size: 4.5em;
+    color: #4e5357;
+  }
+
+  .placeholder-hero a {
+    font-size: 2.5em;
   }
 }
 
