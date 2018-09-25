@@ -49,8 +49,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -75,8 +75,11 @@ body {
 }
 
 .placeholder-hero h1.error-code {
-  font-size: 4em;
+  font-size: 6em;
+  line-height: 1;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .placeholder-hero h1 img {
@@ -86,22 +89,27 @@ body {
 }
 
 .placeholder-hero h2 {
-  font-size: 2em;
+  font-size: 2.25em;
   color: #4e5357;
   display: block;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin: 0;
+  padding: 20px;
 }
 
 .placeholder-hero a {
   font-size: 2em;
   line-height: 1.5;
-  color: #6574cd;
+  color: #ffffff;
   display: block;
   text-align: center;
 }
 
 .placeholder-hero a:hover {
-  color: #ffffff;
+  color: #6574cd;
 }
 
 @media (min-width: 768px) {
@@ -111,7 +119,12 @@ body {
   }
 
   .placeholder-hero h1.error-code {
-    font-size: 7em;
+    font-size: 10em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    line-height: 1em;
+    margin: 0;
   }
 
   .placeholder-hero h1 img {
@@ -121,11 +134,15 @@ body {
 
   .placeholder-hero h2 {
     font-size: 4.5em;
-    color: #4e5357;
+    margin: 0;
   }
 
   .placeholder-hero a {
-    font-size: 2.5em;
+    font-size: 3.75em;
+    margin-top: 100px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 
