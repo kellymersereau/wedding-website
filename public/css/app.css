@@ -343,6 +343,7 @@ p {
   -webkit-transition: all 0.65s ease-in-out;
   transition: all 0.65s ease-in-out;
   overflow-x: hidden;
+  opacity: 0;
 }
 
 .subnav-wrapper ul {
@@ -388,6 +389,7 @@ p {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   z-index: 80;
+  opacity: 1;
 }
 
 @media (min-width: 800px) {
