@@ -201,7 +201,7 @@ p {
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .link-list-wrapper ul li a {
   text-align: left;
-  font-size: 26px;
+  font-size: 1.444em;
   line-height: 1;
   font-family: "BebasNeue-Bold", sans-serif;
   text-decoration: none;
@@ -458,7 +458,7 @@ p {
 
 .placeholder-hero h2 {
   font-size: 2.25em;
-  color: #4e5357;
+  color: #91748b;
   display: block;
   text-align: center;
   -webkit-box-flex: 1;
@@ -477,7 +477,7 @@ p {
 }
 
 .placeholder-hero a:hover {
-  color: #6574cd;
+  color: #593F68;
 }
 
 @media (min-width: 768px) {

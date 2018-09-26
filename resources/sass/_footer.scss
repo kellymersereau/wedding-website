@@ -13,7 +13,7 @@ footer {
 			margin: 0;
 			font-size: .75em;
 			a {
-				color: #593F68;
+				color: $hoverPurple;
 				transition: all 0.25s ease-in-out;
 				cursor: pointer;
 				&:hover,

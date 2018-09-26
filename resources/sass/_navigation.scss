@@ -65,7 +65,7 @@
 									display: inline-block;
 									a {
 										text-align: left;
-										font-size: 26px;
+										font-size: 1.444em;
 										line-height: 1;
 										font-family: $BebasNeue-Bold;
 										text-decoration: none;
@@ -80,12 +80,12 @@
 											padding-left: 5px;
 										}
 										&.active {
-											color: #91748b;
+											color: $activePurple;
 											text-decoration: underline;
 										}
 										&:hover,
 										&:focus {
-											color: #593F68;
+											color: $hoverPurple;
 											text-decoration: underline;
 										}
 									}
@@ -142,7 +142,7 @@
 					li {
 						a {
 							display: block;
-							border-bottom: 1px solid #cacaca;
+							border-bottom: 1px solid $light-grey;
 							padding: 15px 10px 10px;
 							color: $black;
 							font-family: $BebasNeue-Bold;
@@ -150,7 +150,7 @@
 							line-height: 1.15;
 							text-decoration: none;
 							&.active {
-								color: #91748b;
+								color: $activePurple;
 								text-decoration: underline;
 							}
 							&:hover {
@@ -219,12 +219,12 @@
 			 transition: all 0.25s ease-in-out;
 			 display: block;
 			 &.active {
-				 color: #91748b;
+				 color: $activePurple;
 				 text-decoration: underline;
 			 }
 			 &:hover,
 			 &:focus {
-				 color: #593F68;
+				 color: $hoverPurple;
 				 text-decoration: underline;
 			 }
 		 }

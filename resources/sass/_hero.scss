@@ -30,7 +30,7 @@
 	}
 	h2 {
 		font-size: 2.25em;
-		color: $dark-grey;
+		color: $activePurple;
 		display: block;
 		text-align: center;
 		flex: 1 1 100%;
@@ -44,7 +44,7 @@
 		display: block;
 		text-align: center;
 		&:hover {
-			color: $indigo;
+			color: $hoverPurple;
 		}
 	}
 }
