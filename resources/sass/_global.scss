@@ -1,8 +1,4 @@
-body, input, button, select, textarea, a {
-	font-family: $BebasNeue-Light;
-	font-size: 18px;
-	line-height: 1.4;
-}
+
 body {
 	background-color: $body-bg;
 	background: $body-bg;
@@ -10,4 +6,37 @@ body {
 	font-size: 18px;
 	line-height: 1.4;
 	margin: 0;
+	position: relative;
+	min-height: 100%;
+}
+
+.content-wrapper {
+	margin-top: 50px;
+}
+
+h1 {
+	font-family: $BebasNeue-Bold;
+	font-size: 3.5em;
+	line-height: 1.15;
+	letter-spacing: -2px;
+}
+
+h2 {
+	font-family: $BebasNeue-Bold;
+	font-size: 2.5em;
+	line-height: 1.15;
+	letter-spacing: -2px;
+}
+
+h3 {
+	font-family: $BebasNeue-Bold;
+	font-size: 1.5em;
+	line-height: 1.15;
+	letter-spacing: -2px;
+}
+
+p {
+	font-family: $NotoSerif-Regular;
+	font-size: 1em;
+	line-height: 1.15;
 }

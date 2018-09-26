@@ -24,15 +24,15 @@ class PageController extends Controller
 		]);
 	}
 	
-	public function about()
+	public function ourStory()
 	{
-		$page_url = '/about';
-		$title = 'About Our Wedding';
-		$description = 'Read about everything you need to know for our wedding!';
+		$page_url = '/our-story';
+		$title = 'Our Story';
+		$description = 'Read the story of how we met, our relationship and life together.';
 		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor';
-		$pageClass = "about";
+		$pageClass = "our-story";
 		
-		return view('pages.about', [
+		return view('pages.our-story', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,
@@ -44,8 +44,8 @@ class PageController extends Controller
 	public function weddingDetails()
 	{
 		$page_url = '/wedding-details';
-		$title = 'Wedding Information';
-		$description = 'Specific information about our wedding on October 11, 2019';
+		$title = 'Details about our wedding!';
+		$description = 'Specific details about our wedding on October 11, 2019';
 		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, details';
 		$pageClass = "details";
 		
@@ -95,7 +95,7 @@ class PageController extends Controller
 	
 	public function bridalParty()
 	{
-		$page_url = '/bridal-party';
+		$page_url = '/wedding-details/bridal-party';
 		$title = 'Our Bridal Party';
 		$description = 'Information about our bridal party!';
 		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, bridal party, bridesmaids, groomsmen, maid of honor, best man';
@@ -136,6 +136,23 @@ class PageController extends Controller
 		$pageClass = "contact";
 		
 		return view('pages.contact', [
+			'title' => $title,
+			'description'=>$description,
+			'keywords'=>$keywords,
+			'pageClass'=>$pageClass,
+			'page_url'=>$page_url
+		]);
+	}
+	
+	public function rsvp()
+	{
+		$page_url = '/rsvp';
+		$title = 'RSVP to our wedding';
+		$description = 'RSVP to our wedding';
+		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, rsvp';
+		$pageClass = "rsvp";
+		
+		return view('pages.rsvp', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,

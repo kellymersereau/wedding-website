@@ -22,13 +22,11 @@
 </head>
 <body class="@if(! empty($pageClass)) {{ $pageClass }} @endif">
 
-<div class="wrapper">
-
-@include('partials.navigation')
-
-@yield('content')
-
-</div>
+	@include('partials.navigation')
+	
+	<div class="content-wrapper">
+		@yield('content')
+	</div>
 
 
 <!-- footer -->

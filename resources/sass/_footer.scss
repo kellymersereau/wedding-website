@@ -1,0 +1,28 @@
+footer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	margin-top: 20px;
+	.footer-wrapper {
+		padding: 0 10px 10px;
+		max-width: 1024px;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			font-family: $Roboto-Light;
+			margin: 0;
+			font-size: .75em;
+			a {
+				color: #593F68;
+				transition: all 0.25s ease-in-out;
+				cursor: pointer;
+				&:hover,
+				&:focus {
+					color: $black;
+					text-transform: uppercase;
+					font-size: 1.15em;
+				}
+			}
+		}
+	}
+}

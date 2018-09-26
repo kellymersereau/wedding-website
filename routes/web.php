@@ -13,7 +13,7 @@
 
 Route::get('/', 'PageController@index');
 
-Route::get('/about', 'PageController@about');
+Route::get('/our-story', 'PageController@ourStory');
 
 Route::get('/wedding-details', 'PageController@weddingDetails');
 
@@ -21,11 +21,13 @@ Route::get('/wedding-details/hotel', 'PageController@hotel');
 
 Route::get('/wedding-details/weekend-plans', 'PageController@weekendPlans');
 
-Route::get('/bridal-party', 'PageController@bridalParty');
+Route::get('/wedding-details/bridal-party', 'PageController@bridalParty');
 
 Route::get('/registry', 'PageController@registry');
 
 Route::get('/contact', 'PageController@contact');
+
+Route::get('/rsvp', 'PageController@rsvp');
 
 Route::get('/sitemap.xml', function(){
 	return response()->view('sitemap')->header('Content-Type', 'text/xml');

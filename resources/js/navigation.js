@@ -136,21 +136,3 @@ var navigation = {
 		$html.classList.remove('mobile--nav--is--open');
 	}
 }
-var main = {
-	init: function (){
-		navigation.init();
-	}
-}
-
-main.init();
-
-
-
-
-
-
-
-
-
-
-

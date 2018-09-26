@@ -5,7 +5,7 @@
 	
 	<div class="placeholder-hero">
 		<h1>
-			Check back soon for information about our wedding. <img src="/img/icons/heart-icon.png">
+			Coming soon...
 		</h1>
 	</div>
 
