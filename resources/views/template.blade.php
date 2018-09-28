@@ -35,7 +35,9 @@
 @include('partials.footer')
 
 {{-- THIS IS NOT ACTUALLY BOOTSTRAP, THIS IS JUST THE VENDOR IMPORTS NEEDS TO BE LOADED FIRST CANNOT ASYNC LOAD THIS OTHERWISE REGULAR JS DOESN"T WORK AND THROWS ERRRORS --}}
+
 <script src="/js/bootstrap.min.js"></script>
+@yield('extra-js')
 <script src="/js/app.min.js" async></script>
 
 </body>

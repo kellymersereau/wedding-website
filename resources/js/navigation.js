@@ -6,6 +6,7 @@ var navigation = {
 	init: function () {
 		$html = document.getElementsByTagName('html')[0];
 		navigation.cE();
+		navigation.rE();
 	},
 	cE: function () {
 		navigation.openBtn = $('.btn-nav-open');
@@ -69,55 +70,77 @@ var navigation = {
 			
 		});
 		
-		$('#wedding-details-link').on('mouseenter', function (e) {
+		$('.subnav-hover-link').on('mouseenter', function (e) {
 			e.preventDefault();
+			
+			$thisLinkSubnav = $(this).data('subnav');
+
+			$thisSubnav = "#"+$thisLinkSubnav;
+			
+			if ($('.subnav-wrapper').hasClass('show')){
+				$('.showing--menu').removeClass('showing--menu');
+				
+				$("body").removeClass("show-hover-navigation");
+				
+				$('.subnav-wrapper').removeClass('show');
+			};
+			
 			$(this).addClass('showing--menu');
 			
-			navigation.showSubMenu();
+			navigation.showSubMenu($thisSubnav);
 		});
 		
-		$('#wedding-details-link').on("mouseleave", function (e) {
+		$('.subnav-hover-link').on("mouseleave", function (e) {
 			e.preventDefault;
 			var toElement = e.relatedTarget;
-			
-			console.log('toElement ', toElement, 'toElement CHILDREN', $(toElement).children('.subnav').length, 'toElement PARENTS', $(toElement).parents('.subnav').length);
-			
+
 			if ($(toElement).attr('class') === 'subnav-wrapper' || $(toElement).attr('class') === 'subnav' || $(toElement).children('.subnav').length > 0 || $(toElement).parents('.subnav').length > 0 || $(toElement).parents('.subnav-wrapper').length > 0){
 				return;
 			} else if ($("body").hasClass('show-hover-navigation')){
-				navigation.hideSubMenu();
+				var subnav = $(this).data('subnav');
+				var subnavId = "#"+subnav;
+				navigation.hideSubMenu(subnavId);
 			}
 		});
 		
 		$('.subnav-wrapper').on("mouseleave", function (e) {
 			e.preventDefault;
-			// console.log(e.currentTarget);
-			navigation.hideSubMenu();
+			var subnav = "#"+$(this).attr('id');
+			navigation.hideSubMenu(subnav);
 		});
 		
-		$('window').on('load', navigation.checkMenuItemOffset());
+		$(window).on('load', navigation.checkMenuItemOffset());
+	},
+	rE: function(){
+		$(window).on('resize', navigation.checkMenuItemOffset());
 	},
 	checkMenuItemOffset: function(){
-		var offsetWithoutPx = navigation.getNavLinkOffsetLeft('#wedding-details-link');
-		var offsetNew = offsetWithoutPx + 'px';
+		var links = [$('#wedding-details-link'), $('#home-details-link')];
 		
-		$('.subnav-wrapper').css('left', offsetNew);
+		for (var i = 0; i < links.length; i++){
+			
+			var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links[i]);
+			var offsetNew = offsetWithoutPx + 'px';
+			var subnav = "#"+links[i].data('subnav');
+			
+			$(subnav).css('left', offsetNew);
+
+		}
 	},
 	getNavLinkOffsetLeft: function getNavLinkOffsetLeft(link){
-		var offset = $(link).offset();
-		
+		var offset = link.offset();
 		return offset.left;
 	},
-	showSubMenu: function(){
-		$('.subnav-wrapper').addClass('show');
+	showSubMenu: function(subnav){
+		$(subnav).addClass('show');
 		$("body").addClass("show-hover-navigation");
 	},
-	hideSubMenu: function(e){
+	hideSubMenu: function(subnav){
 		$('.showing--menu').removeClass('showing--menu');
 		
 		$("body").removeClass("show-hover-navigation");
 		
-		$('.subnav-wrapper').removeClass('show');
+		$(subnav).removeClass('show');
 	},
 	showMobileNavigation: function(){
 		navigation.tl.play();

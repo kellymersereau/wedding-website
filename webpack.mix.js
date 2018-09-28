@@ -5,23 +5,23 @@ const minifier = require('minifier');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const imageminPngcrush = require('imagemin-pngcrush');
 
-mix.webpackConfig({
-	plugins: [
-		new CopyWebpackPlugin([{
-			from: 'resources/img',
-			to: 'img' // Laravel mix will place this in 'public/img'
-		}]),
-		new ImageminPlugin({
-			test: /\.(jpe?g|png|gif|svg)$/i,
-			plugins: [
-				imageminMozjpeg({
-					quality: 80
-				}),
-				imageminPngcrush()
-			]
-		})
-	]
-});
+// mix.webpackConfig({
+// 	plugins: [
+// 		new CopyWebpackPlugin([{
+// 			from: 'resources/img',
+// 			to: 'img' // Laravel mix will place this in 'public/img'
+// 		}]),
+// 		new ImageminPlugin({
+// 			test: /\.(jpe?g|png|gif|svg)$/i,
+// 			plugins: [
+// 				imageminMozjpeg({
+// 					quality: 80
+// 				}),
+// 				imageminPngcrush()
+// 			]
+// 		})
+// 	]
+// });
 
 /*
  |--------------------------------------------------------------------------
@@ -36,6 +36,7 @@ mix.webpackConfig({
 
 mix.scripts([
 		'resources/js/navigation.js',
+		'resources/js/maps.js',
 		'resources/js/init.js'
 	], 'public/js/app.js')
 	.js('resources/js/vendor/bootstrap.js', 'public/js/')

@@ -41,6 +41,23 @@ class PageController extends Controller
 		]);
 	}
 	
+	public function bridalParty()
+	{
+		$page_url = '/bridal-party';
+		$title = 'Our Bridal Party';
+		$description = 'Information about our bridal party!';
+		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, bridal party, bridesmaids, groomsmen, maid of honor, best man';
+		$pageClass = "bridal-party";
+		
+		return view('pages.bridal-party', [
+			'title' => $title,
+			'description'=>$description,
+			'keywords'=>$keywords,
+			'pageClass'=>$pageClass,
+			'page_url'=>$page_url
+		]);
+	}
+	
 	public function weddingDetails()
 	{
 		$page_url = '/wedding-details';
@@ -58,15 +75,15 @@ class PageController extends Controller
 		]);
 	}
 	
-	public function hotel()
+	public function accomodations()
 	{
-		$page_url = '/wedding-details/hotel';
-		$title = 'Hotel Information';
-		$description = 'Hotel Information';
-		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, details';
-		$pageClass = "hotel";
+		$page_url = '/wedding-details/accomodations';
+		$title = 'Accomodations';
+		$description = 'Accomodations';
+		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, details, accomodations';
+		$pageClass = "accomodations";
 		
-		return view('pages.hotel', [
+		return view('pages.accomodations', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,
@@ -76,32 +93,15 @@ class PageController extends Controller
 	}
 	
 	
-	public function weekendPlans()
+	public function otherEvents()
 	{
-		$page_url = '/wedding-details/weekend-plans';
-		$title = 'Wedding weekend plans';
-		$description = 'Details about our wedding weekend plans';
+		$page_url = '/wedding-details/other-events';
+		$title = 'Other events';
+		$description = 'Details about other events during our wedding weekend';
 		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, details, plans, bar crawl';
 		$pageClass = "plans";
 		
 		return view('pages.plans', [
-			'title' => $title,
-			'description'=>$description,
-			'keywords'=>$keywords,
-			'pageClass'=>$pageClass,
-			'page_url'=>$page_url
-		]);
-	}
-	
-	public function bridalParty()
-	{
-		$page_url = '/wedding-details/bridal-party';
-		$title = 'Our Bridal Party';
-		$description = 'Information about our bridal party!';
-		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, bridal party, bridesmaids, groomsmen, maid of honor, best man';
-		$pageClass = "bridal-party";
-		
-		return view('pages.bridal-party', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,

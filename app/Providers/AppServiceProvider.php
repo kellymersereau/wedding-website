@@ -16,15 +16,11 @@ class AppServiceProvider extends ServiceProvider
 	    $primary_urls = [
 		    [ 'url'       => '/',
 			    'label'     => 'Kelly Mersereau and Brian Taylor\'s Wedding - October 11, 2019',
-			    'nav-text'  => 'Home' ],
-		    
-		    [ 'url'       => '/our-story',
-			    'label'     => 'Our Story',
-			    'nav-text'  => 'Our Story' ],
+			    'nav-text'  => 'Wedding' ],
 		    
 		    [ 'url'       => '/wedding-details',
 			    'label'     => 'Details about our wedding!',
-			    'nav-text'  => 'Wedding Details' ],
+			    'nav-text'  => 'Details' ],
 		    
 		    [ 'url'       => '/registry',
 			    'label'     => 'Registry Information',
@@ -41,18 +37,26 @@ class AppServiceProvider extends ServiceProvider
 	
 	    view()->share('primary_urls', $primary_urls);
 	
+			$secondary_urls_home = [
+				[ 'url'       => '/our-story',
+					'label'     => 'Our Story',
+					'nav-text'  => 'Story' ],
+				
+				[ 'url'       => '/bridal-party',
+					'label'     => 'Information about our bridal party!',
+					'nav-text'  => 'Bridal Party' ]
+			];
+	
+	    view()->share('secondary_urls_home', $secondary_urls_home);
+	    
 	    $secondary_urls = [
-		    [ 'url'       => '/wedding-details/hotel',
-			    'label'     => 'Hotel Information',
-			    'nav-text'  => 'Hotel Information' ],
+		    [ 'url'       => '/wedding-details/accomodations',
+			    'label'     => 'Accomodations',
+			    'nav-text'  => 'Accomodations' ],
 		
-		    [ 'url'       => '/wedding-details/weekend-plans',
-			    'label'     => 'Details about our wedding weekend plans',
-			    'nav-text'  => 'Wedding Weekend Plans' ],
-		
-		    [ 'url'       => '/wedding-details/bridal-party',
-			    'label'     => 'Information about our bridal party!',
-			    'nav-text'  => 'Bridal Party' ]
+		    [ 'url'       => '/wedding-details/other-events',
+			    'label'     => 'Details about other events during our wedding weekend',
+			    'nav-text'  => 'Other Events' ]
 	    ];
 	
 	    view()->share('secondary_urls', $secondary_urls);
