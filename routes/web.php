@@ -15,7 +15,7 @@ Route::get('/', 'PageController@index');
 
 Route::get('/our-story', 'PageController@ourStory');
 
-Route::get('/bridal-party', 'PageController@bridalParty');
+Route::get('/wedding-party', 'PageController@weddingParty');
 
 Route::get('/wedding-details', 'PageController@weddingDetails');
 

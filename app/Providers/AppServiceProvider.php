@@ -42,7 +42,7 @@ class AppServiceProvider extends ServiceProvider
 					'label'     => 'Our Story',
 					'nav-text'  => 'Story' ],
 				
-				[ 'url'       => '/bridal-party',
+				[ 'url'       => '/wedding-party',
 					'label'     => 'Information about our bridal party!',
 					'nav-text'  => 'Bridal Party' ]
 			];

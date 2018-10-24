@@ -41,15 +41,15 @@ class PageController extends Controller
 		]);
 	}
 	
-	public function bridalParty()
+	public function weddingParty()
 	{
-		$page_url = '/bridal-party';
-		$title = 'Our Bridal Party';
-		$description = 'Information about our bridal party!';
-		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, bridal party, bridesmaids, groomsmen, maid of honor, best man';
-		$pageClass = "bridal-party";
+		$page_url = '/wedding-party';
+		$title = 'Our Wedding Party';
+		$description = 'Information about our wedding party!';
+		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, wedding party, bridesmaids, groomsmen, maid of honor, best man';
+		$pageClass = "wedding-party";
 		
-		return view('pages.bridal-party', [
+		return view('pages.wedding-party', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,

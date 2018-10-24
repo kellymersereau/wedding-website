@@ -1,0 +1,93 @@
+.wedding-party {
+	.hero {
+		padding: 25px 0;
+		text-align: center;
+		.clipped-title {
+			background-image: url('../../img/background-imgs/purple-crystals.jpg');
+			background-size: contain;
+			color: $med-purple;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			h1 {
+				text-align: center;
+				-webkit-transition: text-shadow 1s ease;
+				text-shadow: 0 0 1px rgba(0,0,0,.1);
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	.content {
+		padding-bottom: 25px;
+		.list-wrapper {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			.column {
+				flex: 0 0 100%;
+				padding: 20px 0 0 0;
+				&:first-of-type {
+					padding: 0 0 20px 0;
+					border-bottom: 1px solid $dark-purple;
+				}
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					li {
+						padding: 5px 0;
+						h3 {
+							font-family: $BebasNeue-Bold;
+							display: block;
+							margin: 0;
+							span {
+								font-family: $BebasNeue-Light;
+							}
+						}
+						p {
+							margin: 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 768px){
+	.wedding-party {
+		.hero {
+			padding: 50px 0;
+		}
+		.content {
+			padding-bottom: 50px;
+			.list-wrapper {
+				flex-flow: row nowrap;
+				.column {
+					flex: 0 0 45%;
+					padding: 0 0 0 20px;
+					&:first-of-type {
+						padding: 0 20px 0 0;
+						border-right: 1px solid $dark-purple;
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 920px){
+	.wedding-party {
+		.content {
+			.list-wrapper {
+				.column {
+					flex: 0 0 35%;
+				}
+			}
+		}
+	}
+}
