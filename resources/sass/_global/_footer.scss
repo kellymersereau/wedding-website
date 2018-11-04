@@ -2,7 +2,8 @@ footer {
 	width: 100%;
 	position: absolute;
 	left: 0;
-	margin-top: 20px;
+	bottom: 0;
+	box-sizing: border-box;
 	.footer-wrapper {
 		padding: 0 10px 10px;
 		max-width: 1024px;
