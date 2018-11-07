@@ -10,22 +10,36 @@
 		</div>
 	</div>
 
-	<div class="wayfair">
-		<a href="https://www.wayfair.com/registry/wedding/KellyAndBrian10.11.2019" target="_blank" norelopener>
-			<img src="/img/icons/wayfair-logo.png" alt="Wayfair Logo">
-		</a>
+	<div class="content">
+		<div class="flex-wrapper">
+			<div class="flex-link">
+				<a href="https://www.wayfair.com/registry/wedding/KellyAndBrian10.11.2019" target="_blank" norelopener>
+					<div class="img-wrapper">
+						<img src="/img/icons/wayfair-logo.jpg" alt="Wayfair Logo">
+					</div>
+					<div class="button">Go to registry <img src="/img/icons/carrot-right.png"> </div>
+				</a>
+			</div>
+			
+			<div class="flex-link">
+				<a href="https://www.crateandbarrel.com/gift-registry/kelly-mersereau-and-brian-taylor/r5892057" target="_blank" relnoopener>
+					<div class="img-wrapper">
+						<img src="/img/icons/Crate-Barrel-Logo.jpg" alt="Crate and Barrel Logo">
+					</div>
+					<div class="button">Go to registry <img src="/img/icons/carrot-right.png"> </div>
+				</a>
+			</div>
+			
+			<div class="flex-link">
+				<a href="https://www.amazon.com/gp/registry/wedding/9OPF6B7IEA5U" target="_blank" norelopener>
+					<div class="img-wrapper">
+						<img src="/img/icons/amazon_logo_RGB.jpg" alt="Amazon Logo">
+					</div>
+					<div class="button">Go to registry <img src="/img/icons/carrot-right.png"> </div>
+				</a>
+			</div>
+		</div>
 	</div>
-	
-	<div class="crate-and-barrel">
-		<a href="https://www.crateandbarrel.com/gift-registry/kelly-mersereau-and-brian-taylor/r5892057" target="_blank" relnoopener>
-			<img src="/img/icons/Crate-Barrel-Logo.png" alt="Crate and Barrel Logo">
-		</a>
-	</div>
-	
-	<div class="amazon">
-		<a href="https://www.amazon.com/gp/registry/wedding/9OPF6B7IEA5U" target="_blank" norelopener>
-			<img src="/img/icons/amazon_logo_RGB.jpg" alt="Amazon Logo">
-		</a>
-	</div>
+
 
 @endsection
