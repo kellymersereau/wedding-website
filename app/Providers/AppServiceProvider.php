@@ -16,43 +16,37 @@ class AppServiceProvider extends ServiceProvider
 	    $primary_urls = [
 		    [ 'url'       => '/',
 			    'label'     => 'Kelly Mersereau and Brian Taylor\'s Wedding - October 11, 2019',
-			    'nav-text'  => 'Wedding' ],
+			    'nav-text'  => 'Home' ],
+		
+		    [ 'url'       => '/our-story',
+			    'label'     => 'Our story',
+			    'nav-text'  => 'Our story' ],
 		    
 		    [ 'url'       => '/wedding-details',
 			    'label'     => 'Details about our wedding!',
 			    'nav-text'  => 'Details' ],
+		
+		    [ 'url'       => '/wedding-party',
+			    'label'     => 'Information about our wedding party!',
+			    'nav-text'  => 'Wedding Party' ],
 		    
 		    [ 'url'       => '/registry',
-			    'label'     => 'Registry Information',
-			    'nav-text'  => 'Registry' ],
+			    'label'     => 'Gift Registry Information',
+			    'nav-text'  => 'Gift Registry' ],
 		
 		    [ 'url'       => '/rsvp',
 			    'label'     => 'RSVP to our wedding',
-			    'nav-text'  => 'RSVP'],
-		    
-		    [ 'url'       => '/contact',
-			    'label'     => 'Contact us!',
-			    'nav-text'  => 'Contact']
+			    'nav-text'  => 'RSVP']
+	
 	    ];
 	
 	    view()->share('primary_urls', $primary_urls);
-	
-			$secondary_urls_home = [
-				[ 'url'       => '/our-story',
-					'label'     => 'Our Story',
-					'nav-text'  => 'Story' ],
-				
-				[ 'url'       => '/wedding-party',
-					'label'     => 'Information about our bridal party!',
-					'nav-text'  => 'Bridal Party' ]
-			];
-	
-	    view()->share('secondary_urls_home', $secondary_urls_home);
 	    
 	    $secondary_urls = [
-		    [ 'url'       => '/wedding-details/accomodations',
-			    'label'     => 'Accomodations',
-			    'nav-text'  => 'Accomodations' ],
+	    	
+		    [ 'url'       => '/wedding-details/accommodations',
+		    'label'     => 'Accommodations',
+		    'nav-text'  => 'Accommodations' ],
 		
 		    [ 'url'       => '/wedding-details/other-events',
 			    'label'     => 'Details about other events during our wedding weekend',

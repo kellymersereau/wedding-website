@@ -115,17 +115,13 @@ var navigation = {
 		$(window).on('resize', navigation.checkMenuItemOffset());
 	},
 	checkMenuItemOffset: function(){
-		var links = [$('#wedding-details-link'), $('#home-details-link')];
+		var links = $('#wedding-details-link');
 		
-		for (var i = 0; i < links.length; i++){
-			
-			var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links[i]);
-			var offsetNew = offsetWithoutPx + 'px';
-			var subnav = "#"+links[i].data('subnav');
-			
-			$(subnav).css('left', offsetNew);
-
-		}
+		var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links) - 25;
+		var offsetNew = offsetWithoutPx + 'px';
+		var subnav = "#"+links.data('subnav');
+		
+		$(subnav).css('left', offsetNew);
 	},
 	getNavLinkOffsetLeft: function getNavLinkOffsetLeft(link){
 		var offset = link.offset();
@@ -181,12 +177,37 @@ var maps = {
 	}
 	
 };
+/*
+ IMAGE SLIDER LOGIC
+ */
+
+var imageslider = {
+	init: function () {
+		imageslider.eL();
+	},
+	eL: function(){
+		$(".slider").slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear'
+		});
+	},
+	
+	
+};
+
 var main = {
 	init: function (){
 		navigation.init();
 		
-		if ($('body').hasClass('accomodations')) {
+		if ($('body').hasClass('accommodations')) {
 			maps.init();
+		}
+		
+		if ( $('body').hasClass('our-story') ) {
+			imageslider.init();
 		}
 	}
 }

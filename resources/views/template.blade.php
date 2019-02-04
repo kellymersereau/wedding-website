@@ -19,6 +19,8 @@
 	<meta name="og:image" content="{{asset('./img/photos/love-2014.png')}}"/>
 	
 	<link rel="shortcut icon" href="{{asset('/favicon.ico')}}">
+	
+	@yield('extra-css')
 	<!-- Styles -->
 	<link rel="stylesheet" href="/css/app.min.css" type="text/css" media="all">
 </head>

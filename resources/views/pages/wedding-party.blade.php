@@ -17,31 +17,31 @@
 					<li>
 						<h3>Jessica Mersereau <span>&ndash; Maid of Honor</span></h3>
 						<p class="small">
-							Sister of Bride
+							Sister of bride
 						</p>
 					</li>
 					<li>
 						<h3>Jackie Taylor <span>&ndash; Bridesmaid</span></h3>
 						<p class="small">
-							Sister of Groom
+							Sister of groom
 						</p>
 					</li>
 					<li>
 						<h3>Terry Earl <span>&ndash; Bridesmaid</span></h3>
 						<p class="small">
-							Sorority Sister
+							Sorority sister
 						</p>
 					</li>
 					<li>
 						<h3>Xanthy Karamanos <span>&ndash; Bridesmaid</span></h3>
 						<p class="small">
-							Sorority Sister &amp; co-founder of tequila night
+							Sorority sister &amp; co-founder of tequila night
 						</p>
 					</li>
 					<li>
 						<h3>Alli Cozic <span>&ndash; Bridesmaid</span></h3>
 						<p class="small">
-							Sorority Sister
+							Sorority sister
 						</p>
 					</li>
 				</ul>
@@ -49,35 +49,35 @@
 			<div class="column">
 				<ul>
 					<li>
-						<h3>Groomsman <span>&ndash; Groomsman</span></h3>
+						<h3>Brett Bisconti <span>&ndash; Best man</span></h3>
 						<p class="small">
-							Groomsman
+							Fraternity brother
 						</p>
 					</li>
 					<li>
-						<h3>Groomsman <span>&ndash; Groomsman</span></h3>
+						<h3>Chris Hope <span>&ndash; Groomsman</span></h3>
 						<p class="small">
-							Groomsman
+							Fraternity brother
 						</p>
 					</li>
 					<li>
-						<h3>Groomsman <span>&ndash; Groomsman</span></h3>
+						<h3>Dave Thoms <span>&ndash; Groomsman</span></h3>
 						<p class="small">
-							Groomsman
+							Fraternity brother
 						</p>
 					</li>
-					<li>
-						<h3>Groomsman <span>&ndash; Groomsman</span></h3>
-						<p class="small">
-							Groomsman
-						</p>
-					</li>
-					<li>
-						<h3>Groomsman <span>&ndash; Groomsman</span></h3>
-						<p class="small">
-							Groomsman
-						</p>
-					</li>
+					{{--<li>--}}
+						{{--<h3>Groomsman <span>&ndash; Groomsman</span></h3>--}}
+						{{--<p class="small">--}}
+							{{--Groomsman--}}
+						{{--</p>--}}
+					{{--</li>--}}
+					{{--<li>--}}
+						{{--<h3>Groomsman <span>&ndash; Groomsman</span></h3>--}}
+						{{--<p class="small">--}}
+							{{--Groomsman--}}
+						{{--</p>--}}
+					{{--</li>--}}
 				</ul>
 			</div>
 		</div>

@@ -3,9 +3,11 @@
 @section('content')
 	
 	<div class="hero">
-		<h1>
-			Accomodations
-		</h1>
+		<div class="clipped-title">
+			<h1>
+				Accommodations
+			</h1>
+		</div>
 	</div>
 	<div class="content">
 		<div class="hotel-wrapper">
@@ -61,7 +63,7 @@
 					<a href="https://www.airbnb.com/s/Asbury-Park--NJ--United-States/homes?refinement_paths%5B%5D=%2Fhomes&checkin=2019-10-11&checkout=2019-10-12&adults=1&children=0&infants=0&guests=1&query=Asbury%20Park%2C%20NJ%2C%20United%20States&place_id=ChIJkcxLDJ8uwokR8HKvyNgi7ZQ&allow_override%5B%5D=&s_tag=beSLins8" title="Asbury Park, NJ Airbnb">www.airbnb.com</a>
 				</p>
 				<p class="details">
-					Additionally, guests can look into Airbnb options in Asbury Park for the weekend. There are multiple, reasonably priced options available that are within walking distance of The Berkeley Hotel.
+					Additionally, guests can look into Airbnb options in Asbury Park for the weekend. There are multiple, reasonably priced accommodations available within walking distance of The Berkeley Hotel.
 				</p>
 			</div>
 		</div>

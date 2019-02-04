@@ -14,16 +14,16 @@
 	font-display: auto;
 }
 @font-face {
-	font-family: 'NotoSerif-Bold';
-	src: url("../../fonts/NotoSerif-Bold.ttf");
-	font-weight: bold;
+	font-family: 'Trirong-Light';
+	src: url("../../fonts/Trirong-Light.ttf");
+	font-weight: normal;
 	font-style: normal;
 	font-display: auto;
 }
 @font-face {
-	font-family: 'NotoSerif-Regular';
-	src: url("../../fonts/NotoSerif-Regular.ttf");
-	font-weight: normal;
+	font-family: 'Trirong-SemiBold';
+	src: url("../../fonts/Trirong-SemiBold.ttf");
+	font-weight: bold;
 	font-style: normal;
 	font-display: auto;
 }
@@ -41,11 +41,11 @@
 	font-style: normal;
 	font-display: auto;
 }
-//@font-face {
-//	font-family: 'MellowLine-Regular';
-//	src: url("../../fonts/MellowLine-Regular.OTF");
-//	//src: url('../../fonts/MellowLine-Regular.TTF') format('truetype');
-//	font-weight: normal;
-//	font-style: normal;
-//	font-display: auto;
-//}
+
+@font-face {
+	font-family: 'Parisienne-Regular';
+	src: url("../../fonts/Parisienne-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

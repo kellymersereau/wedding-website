@@ -115,17 +115,13 @@ var navigation = {
 		$(window).on('resize', navigation.checkMenuItemOffset());
 	},
 	checkMenuItemOffset: function(){
-		var links = [$('#wedding-details-link'), $('#home-details-link')];
+		var links = $('#wedding-details-link');
 		
-		for (var i = 0; i < links.length; i++){
-			
-			var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links[i]);
-			var offsetNew = offsetWithoutPx + 'px';
-			var subnav = "#"+links[i].data('subnav');
-			
-			$(subnav).css('left', offsetNew);
-
-		}
+		var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links) - 25;
+		var offsetNew = offsetWithoutPx + 'px';
+		var subnav = "#"+links.data('subnav');
+		
+		$(subnav).css('left', offsetNew);
 	},
 	getNavLinkOffsetLeft: function getNavLinkOffsetLeft(link){
 		var offset = link.offset();

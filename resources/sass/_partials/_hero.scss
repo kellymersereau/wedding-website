@@ -50,6 +50,25 @@
 	}
 }
 
+.hero {
+	padding: 25px 0;
+	text-align: center;
+	.clipped-title {
+		background-image: url('../../img/background-imgs/purple-sky.jpg');
+		background-size: contain;
+		color: $med-purple;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		h1 {
+			text-align: center;
+			-webkit-transition: text-shadow 1s ease;
+			text-shadow: 0 0 1px rgba(0,0,0,.1);
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
 @media(min-width: 768px){
 	.placeholder-hero {
 		h1 {

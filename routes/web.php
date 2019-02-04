@@ -13,19 +13,17 @@
 
 Route::get('/', 'PageController@index');
 
-Route::get('/our-story', 'PageController@ourStory');
-
-Route::get('/wedding-party', 'PageController@weddingParty');
+Route::get('/our-story', 'PageController@story');
 
 Route::get('/wedding-details', 'PageController@weddingDetails');
 
-Route::get('/wedding-details/accomodations', 'PageController@accomodations');
+Route::get('/wedding-details/accommodations', 'PageController@accommodations');
 
 Route::get('/wedding-details/other-events', 'PageController@otherEvents');
 
-Route::get('/registry', 'PageController@registry');
+Route::get('/wedding-party', 'PageController@weddingParty');
 
-Route::get('/contact', 'PageController@contact');
+Route::get('/registry', 'PageController@registry');
 
 Route::get('/rsvp', 'PageController@rsvp');
 

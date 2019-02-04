@@ -5,7 +5,7 @@
 	<div class="hero">
 		<div class="clipped-title">
 			<h1>
-				Registry
+				Gift Registry
 			</h1>
 		</div>
 	</div>
@@ -38,6 +38,16 @@
 					<div class="button">Go to registry <img src="/img/icons/carrot-right.png"> </div>
 				</a>
 			</div>
+			
+			<div class="flex-link">
+				<a href="http://www.honeyfund.com/wedding/TaylorMersereau" target="_blank">
+					<div class="img-wrapper">
+						<img src="http://www.honeyfund.com/share/honeyfund3.png" alt="Honeyfund Logo">
+					</div>
+					<div class="button">Go to registry <img src="/img/icons/carrot-right.png"> </div>
+				</a>
+			</div>
+
 		</div>
 	</div>
 

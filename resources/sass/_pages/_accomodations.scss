@@ -1,9 +1,4 @@
-.accomodations{
-	 .hero {
-		 padding: 25px 0;
-		 text-align: center;
-		 background: linear-gradient(lighten($activePurple, 40%), lighten($activePurple, 5%));
-	 }
+.accommodations{
 	 .content {
 		 .hotel-wrapper {
 			 display: flex;
@@ -79,10 +74,7 @@
  }
 
 @media(min-width: 600px){
-	.accomodations{
-		.hero {
-			padding: 50px 0;
-		}
+	.accommodations{
 		.content {
 			.hotel-wrapper {
 				flex-flow: row nowrap;

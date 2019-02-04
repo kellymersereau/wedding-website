@@ -37,6 +37,7 @@ const imageminPngcrush = require('imagemin-pngcrush');
 mix.scripts([
 		'resources/js/navigation.js',
 		'resources/js/maps.js',
+		'resources/js/imageslider.js',
 		'resources/js/init.js'
 	], 'public/js/app.js')
 	.js('resources/js/vendor/bootstrap.js', 'public/js/')

@@ -1,70 +1,77 @@
 .registry {
-	.hero {
-		padding: 25px 0;
-		text-align: center;
-		.clipped-title {
-			background-image: url('../../img/background-imgs/purple-sky.jpg');
-			background-size: contain;
-			color: $med-purple;
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-			h1 {
-				text-align: center;
-				-webkit-transition: text-shadow 1s ease;
-				text-shadow: 0 0 1px rgba(0,0,0,.1);
-				margin: 0;
-				padding: 0;
-			}
-		}
-	}
-	.content {
-		height: 80vh;
-		padding-bottom: 25px;
-		.flex-wrapper {
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-between;
-			align-content: center;
-			align-items: center;
-			.flex-link {
-				flex: 0 0 30%;
-				a {
-					display: flex;
-					flex-flow: row wrap;
-					justify-content: center;
-					align-items: center;
-					align-content: center;
-					height: 225px;
-					width: 100%;
-					background: white;
-					border: 1px solid $light-grey;
-					box-shadow: 1px 2px 3px $grey;
-					border-radius: 3px;
-					text-decoration: none;
-					padding: 10px;
-					.img-wrapper {
-						flex: 0 0 100%;
-						text-align: center;
-						img {
-							height: auto;
-							width: 100%;
-						}
-					}
-					.button {
-						font-family: $Roboto-Light;
-						letter-spacing: -1px;
-						font-size: 1.25em;
-						line-height: 12px;
-						padding: 20px;
-						background-color: $med-purple;
-						color: $black;
-						border-radius: 3px;
-						box-shadow: 1px 2px 1px $grey;
-						img {
-							vertical-align: middle;
-							padding-left: 10px;
-						}
-					}
+	 .content {
+		 height: 80vh;
+		 padding-bottom: 25px;
+		 .flex-wrapper {
+			 display: flex;
+			 flex-flow: row wrap;
+			 justify-content: space-between;
+			 align-content: center;
+			 align-items: center;
+			 .flex-link {
+				 flex: 0 0 45%;
+				 margin-bottom: 20px;
+				 a {
+					 display: flex;
+					 flex-flow: row wrap;
+					 justify-content: center;
+					 align-items: center;
+					 align-content: center;
+					 height: 225px;
+					 width: 100%;
+					 background: white;
+					 border: 1px solid $light-grey;
+					 box-shadow: 1px 2px 3px $grey;
+					 border-radius: 3px;
+					 text-decoration: none;
+					 padding: 10px;
+					 box-sizing: border-box;
+					 .img-wrapper {
+						 flex: 0 0 100%;
+						 text-align: center;
+						 img {
+							 height: auto;
+							 width: auto;
+							 max-height: 116px;
+						 }
+					 }
+					 .button {
+						 font-family: $Roboto-Light;
+						 letter-spacing: -1px;
+						 font-size: 1.25em;
+						 line-height: 12px;
+						 padding: 10px;
+						 border-bottom: 1px solid rgba(89,63,104,0.42);
+						 color: $dark-grey;
+						 img {
+							 vertical-align: middle;
+							 padding-left: 10px;
+						 }
+					 }
+					 &:hover {
+						 .button {
+							 color: $hoverPurple;
+							 border-bottom: 2px solid $hoverPurple;
+							 img {
+								 animation: shake-horizontal 1.5s linear infinite both;
+							 }
+						 }
+					 }
+				 }
+			 }
+		 }
+	 }
+ }
+
+@media(max-width: 600px){
+	.registry {
+		.content {
+			height: 100%;
+			.flex-wrapper {
+				justify-content: center;
+				.flex-link {
+					flex: 0 0 85%;
+					margin-bottom: 20px;
 				}
 			}
 		}

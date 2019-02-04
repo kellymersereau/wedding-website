@@ -6,11 +6,12 @@
 	left: 0;
 	z-index: 1000;
 	background: $white;
+	box-shadow: 0 1px 5px 0 $grey;
 	nav {
 		display: block;
 		width: 100%;
 		height: 50px;
-		position: fixed;
+		position: relative;
 		z-index: 90;
 		box-sizing: border-box;
 		.main-nav-wrapper {
@@ -29,35 +30,29 @@
 				padding: 0;
 				margin: 0;
 				li {
-					&.logo {
-						flex: 1 1 10%;
-						align-self: center;
-						transition: all .25s ease;
-						padding-left: 20px;
-						height: 28px;
-						a {
-							text-decoration: none;
-							outline: none;
-							&:hover,
-							&:focus {
-								outline: none;
-								text-decoration: none;
-							}
-							img {
-								width: auto;
-								height: auto;
-							}
-						}
-					}
 					&.link-list {
-						display: none;
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: center;
+						align-content: center;
+						align-items: center;
 						flex: 1 1 85%;
 						height: 100%;
 						margin: 0 20px;
 						align-self: center;
 						max-width: 700px;
+						.logo-wrapper {
+							width: 100%;
+							height: auto;
+							img {
+								max-width: 100%;
+								max-height: 100%;
+							}
+						}
 						.link-list-wrapper {
+							display: none;
 							height: 100%;
+							flex: 1 1 100%;
 							ul {
 								width: 100%;
 								li {
@@ -67,7 +62,8 @@
 										text-align: left;
 										font-size: 1.444em;
 										line-height: 1;
-										font-family: $BebasNeue-Bold;
+										letter-spacing: 1px;
+										font-family: $BebasNeue-Light;
 										text-decoration: none;
 										transition: all 0.25s ease-in-out;
 										color: $black;
@@ -81,12 +77,11 @@
 										}
 										&.active {
 											color: $activePurple;
-											text-decoration: underline;
+											font-family: $BebasNeue-Bold;
 										}
 										&:hover,
 										&:focus {
 											color: $hoverPurple;
-											text-decoration: underline;
 										}
 									}
 								}
@@ -132,7 +127,7 @@
 		transition: all .75s ease;
 		box-sizing: border-box;
 		.mobile-main-links {
-			padding: 20px 20px 0;
+			padding: 60px 20px 0;
 			box-sizing: border-box;
 			.link-list-wrapper {
 				ul {
@@ -142,16 +137,15 @@
 					li {
 						a {
 							display: block;
-							border-bottom: 1px solid $light-grey;
 							padding: 15px 10px 10px;
 							color: $black;
-							font-family: $BebasNeue-Bold;
-							font-size: 1.5em;
-							line-height: 1.15;
+							font-family: $BebasNeue-Light;
+							font-size: 2em;
+							line-height: 1;
 							text-decoration: none;
 							&.active {
 								color: $activePurple;
-								text-decoration: underline;
+								font-family: $BebasNeue-Bold;
 							}
 							&:hover {
 								text-decoration: none;
@@ -163,7 +157,7 @@
 								a {
 									padding: 6px 10px 0;
 									color: $black;
-									font-size: 1.25em;
+									font-size: 1.5em;
 									img {
 										padding-right: 10px;
 										height: 10px;
@@ -182,6 +176,9 @@
 
 .mobile--nav--open {
 	overflow: hidden;
+	.nav-wrapper {
+		box-shadow: none;
+	}
 	.mobile-nav-wrapper {
 		visibility: visible;
 		.nav-block {
@@ -213,7 +210,7 @@
 				padding-top: 0;
 			}
 		 a {
-			 font-family: $BebasNeue-Bold;
+			 font-family: $BebasNeue-Light;
 			 font-size: 1.25em;
 			 color: black;
 			 text-decoration: none;
@@ -221,12 +218,10 @@
 			 display: block;
 			 &.active {
 				 color: $activePurple;
-				 text-decoration: underline;
 			 }
 			 &:hover,
 			 &:focus {
 				 color: $hoverPurple;
-				 text-decoration: underline;
 			 }
 		 }
 		}
@@ -247,7 +242,14 @@
 				ul {
 					li {
 						&.link-list {
-							display: block;
+							max-width: 100%;
+							margin: 0 40px;
+							.logo-wrapper {
+								display: none;
+							}
+							.link-list-wrapper {
+								display: block;
+							}
 						}
 						&.btn-nav-open {
 							display: none;
