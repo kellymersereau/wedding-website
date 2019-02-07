@@ -20,7 +20,7 @@
 					Asbury Park, NJ 07712
 				</p>
 				<p class="phone">
-					<img src="/img/icons/phone.png">
+					<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/phone.png">
 					<a href="tel:1-732-776-6700">732-776-6700</a>
 				</p>
 				<p class="website">
@@ -44,7 +44,7 @@
 					Asbury Park, NJ 07712
 				</p>
 				<p class="phone">
-					<img src="/img/icons/phone.png">
+					<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/phone.png">
 					<a href="tel:1-732-774-7100">
 						732-774-7100
 					</a>

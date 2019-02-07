@@ -4,7 +4,7 @@
 			<ul>
 				<li class="link-list">
 					<div class="logo-wrapper">
-						<img src="/img/icons/nav-icon.png">
+						<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/nav-icon.png">
 					</div>
 					<div class="link-list-wrapper">
 						<ul>
@@ -13,7 +13,7 @@
 								<li class="subnav-hover-link" id="wedding-details-link" data-subnav="details-link">
 									<a href="{{ $primary_url['url'] }}" class="{{ ! empty($page_url) && $page_url === $primary_url['url'] ? "active" : "" }}" title="{{ $primary_url['label'] }}">
 										{!! $primary_url['nav-text'] !!}
-										<img src="/img/icons/carrot-down.png">
+										<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/carrot-down.png">
 									</a>
 								</li>
 								@else

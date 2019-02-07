@@ -1061,7 +1061,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .hero .clipped-title {
-  background-image: url(/images/purple-sky.jpg?eac8602313225b9cb07d8ac08d6993f9);
+  background-image: url("/img/background-imgs/purple-sky.jpg");
   background-size: contain;
   color: #845772;
   -webkit-text-fill-color: transparent;
@@ -1141,7 +1141,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .slick-prev:before {
-  content: url(/images/arrow_left.png?4b188c3a7c5fa349edfdfa98a01fba23);
+  content: url("https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_left.png");
 }
 
 .slick-next {
@@ -1149,7 +1149,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .slick-next:before {
-  content: url(/images/arrow_right.png?7cb89663953ec00989a767553c2ab332);
+  content: url("https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png");
 }
 
 .slick-slide img {

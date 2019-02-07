@@ -20,25 +20,25 @@
 	<div class="slider-wrapper">
 		<div class="slider">
 			<div>
-				<img src="/img/photos/engagement/Me-15.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-15.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-24.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-24.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-50.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-50.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-75.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-75.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-83.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-83.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-19.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-19.jpg">
 			</div>
 			<div>
-				<img src="/img/photos/engagement/Me-76.jpg">
+				<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-76.jpg">
 			</div>
 		</div>
 	</div>

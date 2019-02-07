@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<div class="opening-img-wrapper">
-		<img src="/img/photos/engagement/Me-59.jpg">
+		<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-59.jpg">
 	</div>
 	
 	<div class="details-wrapper">
