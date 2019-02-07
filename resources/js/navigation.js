@@ -117,7 +117,7 @@ var navigation = {
 	checkMenuItemOffset: function(){
 		var links = $('#wedding-details-link');
 		
-		var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links) - 25;
+		var offsetWithoutPx = navigation.getNavLinkOffsetLeft(links) - 15;
 		var offsetNew = offsetWithoutPx + 'px';
 		var subnav = "#"+links.data('subnav');
 		

@@ -8,8 +8,8 @@ const imageminPngcrush = require('imagemin-pngcrush');
 // mix.webpackConfig({
 // 	plugins: [
 // 		new CopyWebpackPlugin([{
-// 			from: 'resources/img',
-// 			to: 'img' // Laravel mix will place this in 'public/img'
+// 			from: 'resources/img/**/*',
+// 			to: '/img/' // Laravel mix will place this in 'public/img'
 // 		}]),
 // 		new ImageminPlugin({
 // 			test: /\.(jpe?g|png|gif|svg)$/i,

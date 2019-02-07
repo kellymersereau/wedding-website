@@ -16,7 +16,7 @@
 	<meta name="keywords" content="@if(! empty($keywords)) {{ $keywords }} @endif">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="og:title" content="@if( ! empty($title)) {{ $title }} @else @yield('title') @endif"/>
-	<meta name="og:image" content="{{asset('./img/photos/love-2014.png')}}"/>
+	<meta name="og:image" content="{{asset('https://s3.amazonaws.com/kellyandbrianwedding.com/images/love-2014.png')}}"/>
 	
 	<link rel="shortcut icon" href="{{asset('/favicon.ico')}}">
 	

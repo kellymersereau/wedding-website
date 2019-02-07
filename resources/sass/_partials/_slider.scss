@@ -22,13 +22,13 @@
 	left: 10px;
 	z-index: 10000;
 	&:before {
-		content: url("../img/icons/arrow_left.png");
+		content: url("https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_left.png");
 	}
 }
 .slick-next {
 	right: 10px;
 	&:before {
-		content: url("../img/icons/arrow_right.png");
+		content: url("https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png");
 	}
 }
 
