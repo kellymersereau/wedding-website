@@ -2,11 +2,21 @@
 
 @section('content')
 	
-	<div class="placeholder-hero">
-		<h1>
-			Coming soon...
-		</h1>
+	
+	<div class="hero">
+		<div class="clipped-title">
+			<h1>
+				RSVP
+			</h1>
+		</div>
 	</div>
+	
+	<div class="content">
+		<h3>
+			Check back later!
+		</h3>
+	</div>
+
 
 
 @endsection

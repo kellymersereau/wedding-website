@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: 'BebasNeue-Bold';
   src: url(/fonts/BebasNeue-Bold.otf?524d720f3f670bd38785447ca9c4b395);
@@ -66,6 +68,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   position: relative;
+  height: 100%;
   min-height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -87,7 +90,7 @@ body {
 }
 
 .content-wrapper .content {
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
   max-width: 1024px;
   -webkit-box-sizing: border-box;
@@ -97,32 +100,126 @@ body {
 
 h1 {
   font-family: "BebasNeue-Bold", sans-serif;
-  font-size: 4.5em;
-  line-height: 1.15;
-  letter-spacing: -2px;
+  color: #593F68;
+  font-size: 3.5em;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+h1 sup {
+  font-size: 22px;
+  line-height: 22px;
+  vertical-align: text-top;
 }
 
 h2 {
   font-family: "BebasNeue-Bold", sans-serif;
+  color: #422e4d;
   font-size: 2.5em;
   line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+h2 sup {
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: text-top;
 }
 
 h3 {
   font-family: "BebasNeue-Bold", sans-serif;
-  font-size: 1.5em;
+  color: #845772;
+  font-size: 1.75em;
   line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+h3 sup {
+  font-size: 1rem;
+  line-height: 1rem;
+  vertical-align: text-top;
 }
 
 p {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 1em;
+  color: #4e5357;
+  font-size: 1.15em;
   line-height: 1.15;
+  padding: 0;
+  margin: 0;
+}
+
+p sup {
+  font-size: 13px;
+  line-height: 13px;
+  vertical-align: text-top;
+}
+
+p .bold {
+  font-family: "BebasNeue-Bold", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #4e5357;
+  padding: 0;
+  vertical-align: initial;
+  letter-spacing: 1.5px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.line-break {
+  width: 100%;
+  height: 5px;
+  background: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
+  margin: 40px 0;
 }
 
 @media (min-width: 600px) {
   .content-wrapper .content {
-    padding: 0 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5em;
+    line-height: 1;
+  }
+
+  h1 sup {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  h2 {
+    font-size: 3em;
+    line-height: 1.15;
+  }
+
+  h2 sup {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  h3 {
+    font-size: 2.25em;
+    line-height: 1.15;
+  }
+
+  h3 sup {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -174,8 +271,8 @@ footer .footer-wrapper p a:focus {
   left: 0;
   z-index: 1000;
   background: #ffffff;
-  -webkit-box-shadow: 0 1px 5px 0 #a3a8b7;
-          box-shadow: 0 1px 5px 0 #a3a8b7;
+  -webkit-box-shadow: 0 1px 5px 0 #4e5357;
+          box-shadow: 0 1px 5px 0 #4e5357;
 }
 
 .nav-wrapper nav {
@@ -562,7 +659,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .accommodations .content .hotel-wrapper .text-wrapper p.website a:hover {
-  color: #593F68;
+  color: #422e4d;
 }
 
 .accommodations .content .hotel-wrapper #theasburyhotel {
@@ -608,8 +705,6 @@ footer .footer-wrapper p a:focus {
   }
 
   .accommodations .content .hotel-wrapper .text-wrapper p.details {
-    font-size: .9em;
-    line-height: 1.3;
     padding: 20px 0;
     margin: 0;
   }
@@ -664,7 +759,7 @@ footer .footer-wrapper p a:focus {
 
 .wedding-party .content .list-wrapper .column:first-of-type {
   padding: 0 0 20px 0;
-  border-bottom: 1px solid #593358;
+  border-bottom: 1px solid #422e4d;
 }
 
 .wedding-party .content .list-wrapper .column ul {
@@ -717,7 +812,7 @@ footer .footer-wrapper p a:focus {
 
   .wedding-party .content .list-wrapper .column:first-of-type {
     padding: 0 20px 0 0;
-    border-right: 1px solid #593358;
+    border-right: 1px solid #422e4d;
     border-bottom: 0;
   }
 }
@@ -780,8 +875,8 @@ footer .footer-wrapper p a:focus {
   width: 100%;
   background: white;
   border: 1px solid #cacaca;
-  -webkit-box-shadow: 1px 2px 3px #a3a8b7;
-          box-shadow: 1px 2px 3px #a3a8b7;
+  -webkit-box-shadow: 1px 2px 3px #4e5357;
+          box-shadow: 1px 2px 3px #4e5357;
   border-radius: 3px;
   text-decoration: none;
   padding: 10px;
@@ -809,7 +904,7 @@ footer .footer-wrapper p a:focus {
   line-height: 12px;
   padding: 10px;
   border-bottom: 1px solid rgba(89, 63, 104, 0.42);
-  color: #4e5357;
+  color: #2B2B2B;
 }
 
 .registry .content .flex-wrapper .flex-link a .button img {
@@ -868,6 +963,7 @@ footer .footer-wrapper p a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 25px 0 10px;
 }
 
 .home .hero .header-text {
@@ -887,6 +983,7 @@ footer .footer-wrapper p a:focus {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 100%;
+  padding: 0 20px;
 }
 
 .home .hero .header-text .text-wrapper h1 {
@@ -895,8 +992,8 @@ footer .footer-wrapper p a:focus {
   letter-spacing: 1px;
   padding-left: 10px;
   line-height: 1;
-  font-size: 2.5em;
-  margin: 20px 0;
+  font-size: 2em;
+  margin: 10px 0;
   text-align: left;
 }
 
@@ -907,8 +1004,9 @@ footer .footer-wrapper p a:focus {
 .home .hero .header-text .text-wrapper h1.and {
   font-family: "Trirong-Light", serif;
   color: #845772;
-  font-size: 6.25em;
+  font-size: 4.75em;
   padding-left: 0;
+  margin: 0;
 }
 
 .home .hero .header-text .text-wrapper h1.right {
@@ -944,7 +1042,7 @@ footer .footer-wrapper p a:focus {
 .home .details-wrapper h1 {
   font-family: "BebasNeue-Bold", sans-serif;
   color: #845772;
-  font-size: 4.5em;
+  font-size: 3em;
   line-height: .75;
   letter-spacing: 1px;
   padding: 0;
@@ -961,12 +1059,27 @@ footer .footer-wrapper p a:focus {
 
 .home .details-wrapper p {
   font-family: "Roboto-Light", sans-serif;
-  color: #4e5357;
+  color: #2B2B2B;
   font-size: 1.5em;
   line-height: 1;
   padding: 0;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: 500px) {
+  .home .hero .header-text .text-wrapper h1 {
+    margin: 20px 0;
+    font-size: 3em;
+  }
+
+  .home .hero .header-text .text-wrapper h1.and {
+    font-size: 6.25em;
+  }
+
+  .home .details-wrapper h1 {
+    font-size: 3.5em;
+  }
 }
 
 @media (min-width: 650px) {
@@ -981,6 +1094,64 @@ footer .footer-wrapper p a:focus {
 
   .home .hero .header-text .text-wrapper h1.right {
     padding-right: 20px;
+  }
+
+  .home .details-wrapper h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .home .details-wrapper h1 {
+    font-size: 4.5em;
+  }
+}
+
+.other-events .event-wrapper {
+  padding: 20px 0;
+}
+
+.other-events .event-wrapper h3 {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.other-events .event-wrapper p {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.other-events .event-wrapper p.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.other-events .event-wrapper ul.non-nav-list {
+  list-style: none;
+  margin: 0;
+}
+
+.other-events .event-wrapper ul.non-nav-list li {
+  font-family: "Roboto-Light", sans-serif;
+  color: #4e5357;
+  font-size: 1.15em;
+  line-height: 1.15;
+  padding: 0 0 5px;
+  margin: 0;
+}
+
+.other-events .event-wrapper ul.non-nav-list li:last-of-type {
+  padding-bottom: 0;
+}
+
+.other-events .event-wrapper ul.non-nav-list li:before {
+  content: "\25CA";
+  color: #91748b;
+}
+
+@media (min-width: 768px) {
+  .other-events .event-wrapper p.max-width-75 {
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -1061,7 +1232,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .hero .clipped-title {
-  background-image: url("/img/background-imgs/purple-sky.jpg");
+  background-image: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
   background-size: contain;
   color: #845772;
   -webkit-text-fill-color: transparent;

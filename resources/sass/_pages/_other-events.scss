@@ -1,0 +1,48 @@
+.other-events {
+	.event-wrapper {
+		padding: 20px 0;
+		h3 {
+			padding-bottom: 10px;
+			text-align: left;
+		}
+		p {
+			text-align: left;
+			padding-bottom: 10px;
+			&.no-padding-bottom {
+				padding-bottom: 0;
+			}
+		}
+		ul.non-nav-list {
+			list-style: none;
+			margin: 0;
+			li {
+				font-family: $Roboto-Light;
+				color: $grey;
+				font-size: 1.15em;
+				line-height: 1.15;
+				padding: 0 0 5px;
+				margin: 0;
+				&:last-of-type {
+					padding-bottom: 0;
+				}
+				&:before {
+					content: "◊";
+					color: $activePurple;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.other-events {
+		.event-wrapper {
+			p {
+				&.max-width-75 {
+					max-width: 75%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

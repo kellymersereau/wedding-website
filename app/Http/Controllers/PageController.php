@@ -82,9 +82,9 @@ class PageController extends Controller
 		$title = 'Other events';
 		$description = 'Details about other events during our wedding weekend';
 		$keywords = 'wedding, new jersey, asbury park, the berkeley hotel, love, really cool people, kelly, brian, mersereau, taylor, information, details, plans, bar crawl';
-		$pageClass = "plans";
+		$pageClass = "other-events";
 		
-		return view('pages.plans', [
+		return view('pages.other-events', [
 			'title' => $title,
 			'description'=>$description,
 			'keywords'=>$keywords,

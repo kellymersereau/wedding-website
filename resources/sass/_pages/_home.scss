@@ -10,6 +10,7 @@
 		align-content: center;
 		align-items: center;
 		position: relative;
+		padding: 25px 0 10px;
 		.header-text {
 			display: flex;
 			flex-flow: row nowrap;
@@ -17,6 +18,7 @@
 			align-items: center;
 			align-content: center;
 			width: 100%;
+			padding: 0 20px;
 			.text-wrapper {
 				h1 {
 					font-family: $BebasNeue-Light;
@@ -24,8 +26,8 @@
 					letter-spacing: 1px;
 					padding-left: 10px;
 					line-height: 1;
-					font-size: 2.5em;
-					margin: 20px 0;
+					font-size: 2em;
+					margin: 10px 0;
 					text-align: left;
 					span {
 						display: block;
@@ -33,8 +35,9 @@
 					&.and {
 						font-family: $Trirong-Light;
 						color: $med-purple;
-						font-size: 6.25em;
+						font-size: 4.75em;
 						padding-left: 0;
+						margin: 0;
 					}
 					&.right {
 						text-align: right;
@@ -66,7 +69,7 @@
 		h1 {
 			font-family: $BebasNeue-Bold;
 			color: $med-purple;
-			font-size: 4.5em;
+			font-size: 3em;
 			line-height: .75;
 			letter-spacing: 1px;
 			padding: 0;
@@ -91,6 +94,29 @@
 	}
 }
 
+@media(min-width: 500px){
+	.home {
+		.hero {
+			.header-text {
+				.text-wrapper {
+					h1 {
+						margin: 20px 0;
+						font-size: 3em;
+						&.and {
+							font-size: 6.25em;
+						}
+					}
+				}
+			}
+		}
+		.details-wrapper {
+			h1 {
+				font-size: 3.5em;
+			}
+		}
+	}
+}
+
 @media(min-width: 650px){
 	.home {
 		.hero {
@@ -105,6 +131,21 @@
 						}
 					}
 				}
+			}
+		}
+		.details-wrapper {
+			h1 {
+				font-size: 4em;
+			}
+		}
+	}
+}
+
+@media(min-width: 768px){
+	.home {
+		.details-wrapper {
+			h1 {
+				font-size: 4.5em;
 			}
 		}
 	}
