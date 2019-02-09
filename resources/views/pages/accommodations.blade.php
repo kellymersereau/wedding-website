@@ -67,6 +67,41 @@
 				</p>
 			</div>
 		</div>
+		
+		<div class="line-break"></div>
+		
+		<div class="cta-wrapper">
+			<h2 class="grey">
+				Additional information:
+			</h2>
+			
+			<div class="button-container">
+				<div class="button-wrapper">
+					<a href="/wedding-details/other-events">
+						<div class="copy">
+							<p>
+								Other events
+							</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png">
+						</div>
+					</a>
+				</div>
+				<div class="button-wrapper">
+					<a href="/wedding-details">
+						<div class="copy">
+							<p>
+								Wedding Details
+							</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 
@@ -74,5 +109,6 @@
 @endsection
 
 @section('extra-js')
+	<script src="/js/maps.min.js" async></script>
 	<script async src="https://maps.googleapis.com/maps/api/js?key={{ env("GOOGLE_MAPS_API") }}"></script>
 @endsection

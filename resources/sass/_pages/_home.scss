@@ -22,6 +22,7 @@
 			.text-wrapper {
 				h1 {
 					font-family: $BebasNeue-Light;
+					color: $dark-purple;
 					font-weight: 400;
 					letter-spacing: 1px;
 					padding-left: 10px;
@@ -34,7 +35,7 @@
 					}
 					&.and {
 						font-family: $Trirong-Light;
-						color: $med-purple;
+						color: $activePurple;
 						font-size: 4.75em;
 						padding-left: 0;
 						margin: 0;
@@ -68,7 +69,7 @@
 		padding: 20px 0;
 		h1 {
 			font-family: $BebasNeue-Bold;
-			color: $med-purple;
+			color: $dark-purple;
 			font-size: 3em;
 			line-height: .75;
 			letter-spacing: 1px;

@@ -1,7 +1,6 @@
 .registry {
 	 .content {
-		 height: 80vh;
-		 padding-bottom: 25px;
+		 padding: 30px 20px 20px;
 		 .flex-wrapper {
 			 display: flex;
 			 flex-flow: row wrap;
@@ -66,7 +65,6 @@
 @media(max-width: 600px){
 	.registry {
 		.content {
-			height: 100%;
 			.flex-wrapper {
 				justify-content: center;
 				.flex-link {

@@ -1,4 +1,4 @@
-*,
+
 html {
 	overflow-x: hidden;
 }
@@ -10,7 +10,7 @@ body {
 	line-height: 1.4;
 	position: relative;
 	height: 100%;
-	min-height: 100%;
+	min-height: 100vh;
 	box-sizing: border-box;
 	overflow-x: hidden;
 	margin: 0;
@@ -111,8 +111,13 @@ p {
 .line-break {
 	width: 100%;
 	height: 5px;
-	background: url('https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg');
+	background-image: url('https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg');
 	margin: 40px 0;
+	&.light {
+		height: 1px;
+		background-image: none;
+		background-color: $light-grey;
+	}
 }
 
 @media(min-width: 600px){

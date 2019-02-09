@@ -25,14 +25,6 @@
 }
 
 @font-face {
-  font-family: 'Trirong-SemiBold';
-  src: url(/fonts/Trirong-SemiBold.ttf?7f4b24042d2291d8e8ea2efdae9c506b);
-  font-weight: bold;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
   font-family: 'Roboto-Light';
   src: url(/fonts/Roboto-Light.ttf?fc84e998bc29b297ea20321e4c90b6ed);
   font-weight: normal;
@@ -48,15 +40,6 @@
   font-display: auto;
 }
 
-@font-face {
-  font-family: 'Parisienne-Regular';
-  src: url(/fonts/Parisienne-Regular.ttf?8dce2d7add6fda2ff1691dd5a50766d4);
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
-
-*,
 html {
   overflow-x: hidden;
 }
@@ -69,7 +52,7 @@ body {
   line-height: 1.4;
   position: relative;
   height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
@@ -181,8 +164,14 @@ p .bold {
 .line-break {
   width: 100%;
   height: 5px;
-  background: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
+  background-image: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
   margin: 40px 0;
+}
+
+.line-break.light {
+  height: 1px;
+  background-image: none;
+  background-color: #cacaca;
 }
 
 @media (min-width: 600px) {
@@ -240,7 +229,7 @@ footer .footer-wrapper {
 }
 
 footer .footer-wrapper hr {
-  border: 1px solid #91748b;
+  border: 1px solid #a5849f;
 }
 
 footer .footer-wrapper p {
@@ -345,9 +334,20 @@ footer .footer-wrapper p a:focus {
   height: auto;
 }
 
-.nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper img {
+.nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a:hover {
+  outline: none;
+  text-decoration: none;
 }
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .link-list-wrapper {
@@ -389,7 +389,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .link-list-wrapper ul li a.active {
-  color: #91748b;
+  color: #a5849f;
   font-family: "BebasNeue-Bold", sans-serif;
 }
 
@@ -463,7 +463,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .mobile-nav-wrapper .nav-block .mobile-main-links .link-list-wrapper ul li a.active {
-  color: #91748b;
+  color: #a5849f;
   font-family: "BebasNeue-Bold", sans-serif;
 }
 
@@ -517,6 +517,9 @@ footer .footer-wrapper p a:focus {
   transition: all 0.65s ease-in-out;
   overflow-x: hidden;
   opacity: 0;
+  border: 1px solid #a192a5;
+  -webkit-box-shadow: 0 1px 5px 0 #4e5357;
+          box-shadow: 0 1px 5px 0 #4e5357;
 }
 
 .subnav-wrapper ul {
@@ -548,7 +551,9 @@ footer .footer-wrapper p a:focus {
 }
 
 .subnav-wrapper ul li a.active {
-  color: #91748b;
+  color: #a5849f;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .subnav-wrapper ul li a:hover,
@@ -624,6 +629,10 @@ footer .footer-wrapper p a:focus {
   padding-bottom: 5px;
 }
 
+.accommodations .content .hotel-wrapper .text-wrapper p.details {
+  padding: 20px 0;
+}
+
 .accommodations .content .hotel-wrapper .text-wrapper p.address {
   margin: 0;
 }
@@ -653,7 +662,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .accommodations .content .hotel-wrapper .text-wrapper p.website a {
-  color: #91748b;
+  color: #a5849f;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -676,20 +685,18 @@ footer .footer-wrapper p a:focus {
 }
 
 .accommodations .content .hotel-wrapper .map-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .accommodations .content .hotel-wrapper .map-wrapper #map {
   height: 400px;
   width: 100%;
-  max-width: 600px;
   border: 1px solid #cacaca;
   margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .accommodations .content .hotel-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -705,7 +712,6 @@ footer .footer-wrapper p a:focus {
   }
 
   .accommodations .content .hotel-wrapper .text-wrapper p.details {
-    padding: 20px 0;
     margin: 0;
   }
 
@@ -721,10 +727,6 @@ footer .footer-wrapper p a:focus {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-  }
-
-  .accommodations .content .hotel-wrapper .map-wrapper #map {
-    height: 300px;
   }
 }
 
@@ -776,10 +778,12 @@ footer .footer-wrapper p a:focus {
   font-family: "BebasNeue-Bold", sans-serif;
   display: block;
   margin: 0;
+  color: #422e4d;
 }
 
 .wedding-party .content .list-wrapper .column ul li h3 span {
   font-family: "BebasNeue-Light", sans-serif;
+  color: #845772;
 }
 
 .wedding-party .content .list-wrapper .column ul li p {
@@ -788,10 +792,6 @@ footer .footer-wrapper p a:focus {
 }
 
 @media (min-width: 768px) {
-  .wedding-party .hero {
-    padding: 50px 0;
-  }
-
   .wedding-party .content {
     padding-bottom: 50px;
   }
@@ -815,19 +815,23 @@ footer .footer-wrapper p a:focus {
     border-right: 1px solid #422e4d;
     border-bottom: 0;
   }
+
+  .wedding-party .content .list-wrapper .column ul li h3 {
+    font-size: 1.75em;
+    line-height: 1.15;
+  }
 }
 
 @media (min-width: 920px) {
   .wedding-party .content .list-wrapper .column {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+        -ms-flex: 0 0 38%;
+            flex: 0 0 38%;
   }
 }
 
 .registry .content {
-  height: 80vh;
-  padding-bottom: 25px;
+  padding: 30px 20px 20px;
 }
 
 .registry .content .flex-wrapper {
@@ -923,10 +927,6 @@ footer .footer-wrapper p a:focus {
 }
 
 @media (max-width: 600px) {
-  .registry .content {
-    height: 100%;
-  }
-
   .registry .content .flex-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -988,6 +988,7 @@ footer .footer-wrapper p a:focus {
 
 .home .hero .header-text .text-wrapper h1 {
   font-family: "BebasNeue-Light", sans-serif;
+  color: #422e4d;
   font-weight: 400;
   letter-spacing: 1px;
   padding-left: 10px;
@@ -1003,7 +1004,7 @@ footer .footer-wrapper p a:focus {
 
 .home .hero .header-text .text-wrapper h1.and {
   font-family: "Trirong-Light", serif;
-  color: #845772;
+  color: #a5849f;
   font-size: 4.75em;
   padding-left: 0;
   margin: 0;
@@ -1041,7 +1042,7 @@ footer .footer-wrapper p a:focus {
 
 .home .details-wrapper h1 {
   font-family: "BebasNeue-Bold", sans-serif;
-  color: #845772;
+  color: #422e4d;
   font-size: 3em;
   line-height: .75;
   letter-spacing: 1px;
@@ -1145,7 +1146,7 @@ footer .footer-wrapper p a:focus {
 
 .other-events .event-wrapper ul.non-nav-list li:before {
   content: "\25CA";
-  color: #91748b;
+  color: #a5849f;
 }
 
 @media (min-width: 768px) {
@@ -1155,79 +1156,55 @@ footer .footer-wrapper p a:focus {
   }
 }
 
-.placeholder-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 80vh;
-  width: 100%;
-  background-image: url("/img/placeholder/ocean.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.details .content div.intro h2 {
+  padding-bottom: 0;
+  color: #422e4d;
 }
 
-.placeholder-hero h1 {
-  padding: 20px;
+.details .content div.intro h3 {
   text-align: center;
-  font-size: 2.5em;
-  color: #000000;
+  color: #422e4d;
+  font-family: "BebasNeue-Light", sans-serif;
+  letter-spacing: 1.5px;
 }
 
-.placeholder-hero h1.error-code {
-  font-size: 6em;
-  line-height: 1;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.placeholder-hero h1 img {
-  padding-left: 10px;
-  height: 35px;
-  width: auto;
-}
-
-.placeholder-hero h2 {
-  font-size: 2.25em;
-  color: #91748b;
-  display: block;
+.details .content h2 {
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  margin: 0;
-  padding: 20px;
+  padding-bottom: 20px;
+  color: #845772;
 }
 
-.placeholder-hero a {
-  font-size: 2em;
-  line-height: 1.5;
-  color: #ffffff;
-  display: block;
-  text-align: center;
+.details .content .copy-group p {
+  line-height: 1.35;
 }
 
-.placeholder-hero a:hover {
-  color: #593F68;
+.details .content .copy-group p.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.details .content .copy-group p .bold {
+  color: #422e4d;
+}
+
+@media (min-width: 600px) {
+  .details .content-wrapper .content {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .details .content-wrapper .content h2 {
+    padding-bottom: 10px;
+  }
+
+  .details .content-wrapper .content .copy-group {
+    max-width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .hero {
-  padding: 25px 0;
+  padding: 50px 0 0;
   text-align: center;
 }
 
@@ -1245,39 +1222,24 @@ footer .footer-wrapper p a:focus {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
+  font-size: 2.5em;
+}
+
+@media (min-width: 400px) {
+  .hero .clipped-title h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 500px) {
+  .hero .clipped-title h1 {
+    font-size: 3.5em;
+  }
 }
 
 @media (min-width: 768px) {
-  .placeholder-hero h1 {
+  .hero .clipped-title h1 {
     font-size: 4.5em;
-    padding: 0 50px;
-  }
-
-  .placeholder-hero h1.error-code {
-    font-size: 10em;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-    line-height: 1em;
-    margin: 0;
-  }
-
-  .placeholder-hero h1 img {
-    height: 60px;
-    width: auto;
-  }
-
-  .placeholder-hero h2 {
-    font-size: 4.5em;
-    margin: 0;
-  }
-
-  .placeholder-hero a {
-    font-size: 3.75em;
-    margin-top: 100px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
   }
 }
 
@@ -1326,5 +1288,141 @@ footer .footer-wrapper p a:focus {
 .slick-slide img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.cta-wrapper h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.cta-wrapper h2.grey {
+  color: #4e5357;
+}
+
+.cta-wrapper .button-container {
+  padding: 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cta-wrapper .button-container .button-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.cta-wrapper .button-container .button-wrapper a {
+  margin: 5px 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #845772;
+  -webkit-box-shadow: 0 3px 6px 0 #cacaca;
+          box-shadow: 0 3px 6px 0 #cacaca;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 15px;
+  background-image: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-color: #845772;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.cta-wrapper .button-container .button-wrapper a p {
+  padding-bottom: 0;
+  font-family: "BebasNeue-Bold", sans-serif;
+  color: #ffffff;
+  font-size: 1.75em;
+  line-height: 1;
+  letter-spacing: 1.5px;
+}
+
+.cta-wrapper .button-container .button-wrapper a:hover {
+  border-color: #ffffff;
+  opacity: 0.6;
+  text-decoration: none;
+  outline: none;
+}
+
+@media (min-width: 400px) {
+  .cta-wrapper .button-container .button-wrapper a p {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .cta-wrapper .button-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .cta-wrapper .button-container .button-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 49%;
+            flex: 0 0 49%;
+  }
+
+  .cta-wrapper .button-container .button-wrapper a {
+    max-width: 350px;
+    margin: 5px auto 15px;
+  }
+
+  .cta-wrapper .button-container .button-wrapper a p {
+    font-size: 1.85em;
+  }
+}
+
+@media (min-width: 700px) {
+  .cta-wrapper .button-container .button-wrapper a p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta-wrapper h2 {
+    padding-bottom: 10px;
+  }
+
+  .cta-wrapper .button-container {
+    max-width: 75%;
+  }
 }
 

@@ -44,9 +44,18 @@
 						.logo-wrapper {
 							width: 100%;
 							height: auto;
-							img {
-								max-width: 100%;
-								max-height: 100%;
+							a {
+								cursor: pointer;
+								display: inline-block;
+								text-decoration: none;
+								img {
+									max-width: 100%;
+									max-height: 100%;
+								}
+								&:hover {
+									outline: none;
+									text-decoration: none;
+								}
 							}
 						}
 						.link-list-wrapper {
@@ -197,6 +206,8 @@
 	transition: all 0.65s ease-in-out;
 	overflow-x: hidden;
 	opacity: 0;
+	border: 1px solid $light-purple;
+	box-shadow: 0 1px 5px 0 #4e5357;
 	ul {
 		padding: 20px;
 		margin: 0;
@@ -218,6 +229,8 @@
 			 display: block;
 			 &.active {
 				 color: $activePurple;
+				 font-weight: 700;
+				 text-decoration: underline;
 			 }
 			 &:hover,
 			 &:focus {

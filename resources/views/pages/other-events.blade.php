@@ -63,6 +63,41 @@
 			</ul>
 		</div>
 		
+		<div class="line-break"></div>
+		
+		<div class="cta-wrapper">
+			<h2 class="grey">
+				Additional information:
+			</h2>
+			
+			<div class="button-container">
+				<div class="button-wrapper">
+					<a href="/wedding-details/accommodations">
+						<div class="copy">
+							<p>
+								Accommodations
+							</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png">
+						</div>
+					</a>
+				</div>
+				<div class="button-wrapper">
+					<a href="/wedding-details">
+						<div class="copy">
+							<p>
+								Wedding Details
+							</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/arrow_right.png">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 
 

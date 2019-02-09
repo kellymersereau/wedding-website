@@ -1,3 +1,58 @@
 .details {
+	.content {
+		div.intro {
+			h2 {
+				padding-bottom: 0;
+				color: $dark-purple;
+			}
+			h3 {
+				text-align: center;
+				color: $dark-purple;
+				font-family: $BebasNeue-Light;
+				letter-spacing: 1.5px;
+			}
+		}
+		h2 {
+			text-align: center;
+			padding-bottom: 20px;
+			color: $med-purple;
+		}
+		.copy-group {
+			p {
+				line-height: 1.35;
+				&.padding-bottom {
+					padding-bottom: 20px;
+				}
+				.bold {
+					color: $dark-purple;
+				}
+			}
+		}
+	}
+}
 
+@media(min-width: 600px){
+	.details {
+		.content-wrapper {
+			.content {
+				padding: 0 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.details {
+		.content-wrapper {
+			.content {
+				h2 {
+					padding-bottom: 10px;
+				}
+				.copy-group {
+					max-width: 75%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
 }

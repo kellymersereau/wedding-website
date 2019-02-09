@@ -36,12 +36,12 @@ const imageminPngcrush = require('imagemin-pngcrush');
 
 mix.scripts([
 		'resources/js/navigation.js',
-		'resources/js/maps.js',
 		'resources/js/imageslider.js',
 		'resources/js/init.js'
 	], 'public/js/app.js')
-	.js('resources/js/vendor/bootstrap.js', 'public/js/')
-	.sass('resources/sass/app.scss', 'public/css', {
+   .js('resources/js/maps.js', 'public/js/')
+   .js('resources/js/vendor/bootstrap.js', 'public/js/')
+   .sass('resources/sass/app.scss', 'public/css', {
 		outputStyle: 'nested'
 	});
 
@@ -49,5 +49,6 @@ mix.scripts([
 mix.then(() => {
 	minifier.minify('public/css/app.css'),
 		minifier.minify('public/js/app.js'),
+		minifier.minify('public/js/maps.js'),
 		minifier.minify('public/js/bootstrap.js')
 })

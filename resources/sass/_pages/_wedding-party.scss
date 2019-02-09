@@ -24,8 +24,10 @@
 							font-family: $BebasNeue-Bold;
 							display: block;
 							margin: 0;
+							color: $dark-purple;
 							span {
 								font-family: $BebasNeue-Light;
+								color: $med-purple;
 							}
 						}
 						p {
@@ -41,9 +43,6 @@
 
 @media(min-width: 768px){
 	.wedding-party {
-		.hero {
-			padding: 50px 0;
-		}
 		.content {
 			padding-bottom: 50px;
 			.list-wrapper {
@@ -56,6 +55,14 @@
 						border-right: 1px solid $dark-purple;
 						border-bottom: 0;
 					}
+					ul {
+						li {
+							h3 {
+								font-size: 1.75em;
+								line-height: 1.15;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -67,7 +74,7 @@
 		.content {
 			.list-wrapper {
 				.column {
-					flex: 0 0 35%;
+					flex: 0 0 38%;
 				}
 			}
 		}
