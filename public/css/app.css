@@ -73,12 +73,16 @@ body {
 }
 
 .content-wrapper .content {
-  padding: 0 20px;
+  padding: 30px 20px 0;
   width: 100%;
   max-width: 1024px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
+}
+
+.content-wrapper .content.no-padding-top {
+  padding: 0 20px;
 }
 
 h1 {
@@ -166,6 +170,10 @@ p .bold {
   height: 5px;
   background-image: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
   margin: 40px 0;
+}
+
+.line-break.first {
+  margin: 30px 0 40px;
 }
 
 .line-break.light {
@@ -615,6 +623,14 @@ footer .footer-wrapper p a:focus {
   padding: 20px 0;
 }
 
+.accommodations .content .hotel-wrapper:first-of-type {
+  padding: 0 0 20px;
+}
+
+.accommodations .content .hotel-wrapper:last-of-type {
+  padding: 20px 0 0;
+}
+
 .accommodations .content .hotel-wrapper .text-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -731,7 +747,7 @@ footer .footer-wrapper p a:focus {
 }
 
 .wedding-party .content {
-  padding-bottom: 25px;
+  padding: 30px 20px 20px;
 }
 
 .wedding-party .content .list-wrapper {
@@ -792,10 +808,6 @@ footer .footer-wrapper p a:focus {
 }
 
 @media (min-width: 768px) {
-  .wedding-party .content {
-    padding-bottom: 50px;
-  }
-
   .wedding-party .content .list-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

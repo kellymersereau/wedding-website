@@ -10,8 +10,8 @@
 		</div>
 	</div>
 	
-	<div class="content">
-		<div class="line-break"></div>
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
 		
 		<div class="intro">
 			<h2>October 11<sup>th</sup>, 2019</h2>
