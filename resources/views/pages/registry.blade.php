@@ -10,7 +10,9 @@
 		</div>
 	</div>
 
-	<div class="content">
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
+		
 		<div class="flex-wrapper">
 			<div class="flex-link">
 				<a href="https://www.wayfair.com/registry/wedding/KellyAndBrian10.11.2019" target="_blank" norelopener>

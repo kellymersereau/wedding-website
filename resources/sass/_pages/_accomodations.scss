@@ -7,11 +7,8 @@
 			 align-content: center;
 			 align-items: center;
 			 padding: 20px 0;
-			 &:first-of-type {
+			 &.no-padding-top {
 				 padding: 0 0 20px;
-			 }
-			 &:last-of-type {
-				 padding: 20px 0 0;
 			 }
 			 .text-wrapper {
 				 flex: 0 0 100%;

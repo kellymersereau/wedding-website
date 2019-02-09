@@ -10,7 +10,8 @@
 		</div>
 	</div>
 	
-	<div class="content">
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
 		<div class="list-wrapper">
 			<div class="column">
 				<ul>

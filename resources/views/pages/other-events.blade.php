@@ -10,12 +10,14 @@
 		</div>
 	</div>
 	
-	<div class="content">
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
+		
 		<p class="max-width-75">
 			We've decided that one day of fun just isn't enough for us, so we're planning a few additional events on Saturday for those of you who plan on staying in Asbury Park for the weekend.
 		</p>
 		
-		<div class="line-break"></div>
+		<div class="line-break light"></div>
 		
 		<h2 class="center">
 			Saturday October 12<sup>th</sup>

@@ -9,8 +9,9 @@
 			</h1>
 		</div>
 	</div>
-	<div class="content">
-		<div class="hotel-wrapper">
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
+		<div class="hotel-wrapper no-padding-top">
 			<div class="text-wrapper">
 				<h3>The Berkeley Hotel</h3>
 				<p class="address">

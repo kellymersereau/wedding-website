@@ -17,6 +17,10 @@
 		</div>
 	</div>
 	
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
+	</div>
+	
 	<div class="slider-wrapper">
 		<div class="slider">
 			<div>

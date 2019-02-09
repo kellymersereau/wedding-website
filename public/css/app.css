@@ -623,12 +623,8 @@ footer .footer-wrapper p a:focus {
   padding: 20px 0;
 }
 
-.accommodations .content .hotel-wrapper:first-of-type {
+.accommodations .content .hotel-wrapper.no-padding-top {
   padding: 0 0 20px;
-}
-
-.accommodations .content .hotel-wrapper:last-of-type {
-  padding: 20px 0 0;
 }
 
 .accommodations .content .hotel-wrapper .text-wrapper {

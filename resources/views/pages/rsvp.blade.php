@@ -11,7 +11,8 @@
 		</div>
 	</div>
 	
-	<div class="content">
+	<div class="content no-padding-top">
+		<div class="line-break first"></div>
 		<h3>
 			Check back later!
 		</h3>
