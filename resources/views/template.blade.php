@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	@if( ! empty($pageClass) && $pageClass === 'home')
+		<meta name="google-site-verification" content="kQM_Yy3C-pUrevpJlZQ16DLwGhAKDCC-fSl8awvvQHM" />
+	@endif
 	<title>
 		@if( ! empty($title))
 			{{ $title }}
