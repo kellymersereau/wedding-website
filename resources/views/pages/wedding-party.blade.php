@@ -68,9 +68,9 @@
 						</p>
 					</li>
 					{{--<li>--}}
-						{{--<h3>Groomsman <span>&ndash; Groomsman</span></h3>--}}
+						{{--<h3>Nick Caliendo<span>&ndash; Groomsman</span></h3>--}}
 						{{--<p class="small">--}}
-							{{--Groomsman--}}
+							{{--Future brother-in-law--}}
 						{{--</p>--}}
 					{{--</li>--}}
 					{{--<li>--}}
