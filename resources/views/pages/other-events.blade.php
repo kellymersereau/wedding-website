@@ -25,7 +25,7 @@
 		<div class="event-wrapper">
 			<h3>Breakfast</h3>
 			<p>
-				We're still figuring out the exact details of the breakfast, but we shall figure it out soon.  This will be updated within the next couple of months with exact details.
+				We're still figuring out the exact details of the breakfast, but we will figure it out soon.  This will be updated within the next couple of months with exact details.
 			</p>
 			<p>
 				<span class="bold">Time:</span> Between 8am &amp; 11am
@@ -38,7 +38,7 @@
 		<div class="event-wrapper">
 			<h3>Post-Wedding Bar Crawl</h3>
 			<p>
-				We're still hammering out the details, but we really want to do a bar crawl.  There are a ton of awesome bars and breweries in Asbury Park so it's a perfect place to have a mid-afternoon, post-wedding bar crawl.  We're also toying with the idea of having a themed bar crawl for the sole reason that me and Brian really enjoy themed events.  So stay the weekend and frolick around Asbury with us!
+				We're still hammering out the details, but we really want to do a bar crawl.  There are a ton of awesome bars and breweries in Asbury Park so it's a perfect place to have a mid-afternoon, post-wedding bar crawl.  We're also toying with the idea of having a themed bar crawl for the sole reason that me and Brian really enjoy themed events.  So stay the weekend and frolic around Asbury with us!
 			</p>
 			<p>
 				<span class="bold">Time:</span> Probably around 2pm
@@ -61,6 +61,9 @@
 				</li>
 				<li>
 					Wonder Bar
+				</li>
+				<li>
+					More TBD
 				</li>
 			</ul>
 		</div>

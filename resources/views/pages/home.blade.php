@@ -35,7 +35,7 @@
 			October 11<sup>th</sup>, 2019
 		</h1>
 		<p>
-			The Berkeley Hotel
+			The Berkeley Oceanfront Hotel
 		</p>
 		<p>
 			Asbury Park, NJ

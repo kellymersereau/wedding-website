@@ -13,7 +13,7 @@
 		<div class="line-break first"></div>
 		<div class="hotel-wrapper no-padding-top">
 			<div class="text-wrapper">
-				<h3>The Berkeley Hotel</h3>
+				<h3>The Berkeley Oceanfront Hotel</h3>
 				<p class="address">
 					1401 Ocean Ave
 				</p>
@@ -54,7 +54,7 @@
 					<a href="https://www.theasburyhotel.com/" title="The Asbury Hotel - Asbury Park, NJ">www.theasburyhotel.com</a>
 				</p>
 				<p class="details">
-					Guests can also book rooms at The Asbury Hotel. It is a short walk down the street from The Berkeley Hotel.
+					Guests can also book rooms at The Asbury Hotel. It is a short walk down the street from The Berkeley Oceanfront Hotel.
 				</p>
 			</div>
 			
@@ -64,7 +64,7 @@
 					<a href="https://www.airbnb.com/s/Asbury-Park--NJ--United-States/homes?refinement_paths%5B%5D=%2Fhomes&checkin=2019-10-11&checkout=2019-10-12&adults=1&children=0&infants=0&guests=1&query=Asbury%20Park%2C%20NJ%2C%20United%20States&place_id=ChIJkcxLDJ8uwokR8HKvyNgi7ZQ&allow_override%5B%5D=&s_tag=beSLins8" title="Asbury Park, NJ Airbnb">www.airbnb.com</a>
 				</p>
 				<p class="details">
-					Additionally, guests can look into Airbnb options in Asbury Park for the weekend. There are multiple, reasonably priced accommodations available within walking distance of The Berkeley Hotel.
+					Additionally, guests can look into Airbnb options in Asbury Park for the weekend. There are multiple reasonably priced accommodations available within walking distance of The Berkeley Oceanfront Hotel.
 				</p>
 			</div>
 		</div>

@@ -64,7 +64,7 @@
 				<span class="bold">What time:</span> 11:30pm
 			</p>
 			<p>
-				Since we're in Asbury, we figured we would take advantage of the situation and have our after party someplace super cool, so we decided to have it at Asbury Lanes.  Asbury Lanes is a 3 minute walk from The Berkeley Hotel, once the reception has ended we will make our way over to the lanes for some drinking, bowling and more fun.
+				We figured we would take advantage of the location and have our after-party somewhere super cool. Conveniently, the super cool place we were looking for is right around the block from the hotel.  Once the reception has ended we will make our way over to the lanes for some drinking, bowling and more fun.  You can take an Uber or Lyft there if you desire, but it's less than a 5 minute walk away, so we highly suggest walking.
 			</p>
 		</div>
 		
