@@ -25,7 +25,7 @@
 					<a href="tel:1-732-776-6700">732-776-6700</a>
 				</p>
 				<p class="website">
-					<a href="https://www.berkeleyhotelnj.com/" title="The Berkeley Oceanfront Hotel - Asbury Park, NJ">www.berkeleyhotelnj.com</a>
+					<a href="https://berkeleyhotelnj.com/" title="The Berkeley Oceanfront Hotel - Asbury Park, NJ">www.berkeleyhotelnj.com</a>
 				</p>
 				<p class="details">
 					For guests wishing to stay in Asbury Park, we have reserved a block of rooms at The Berkeley Hotel. Please mention the Mersereau/Taylor wedding when calling to make your reservation.

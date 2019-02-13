@@ -42,9 +42,9 @@
 			</div>
 			
 			<div class="flex-link">
-				<a href="http://www.honeyfund.com/wedding/TaylorMersereau" target="_blank">
+				<a href="https://www.honeyfund.com/wedding/TaylorMersereau" target="_blank">
 					<div class="img-wrapper">
-						<img src="http://www.honeyfund.com/share/honeyfund3.png" alt="Honeyfund Logo">
+						<img src="https://www.honeyfund.com/share/honeyfund3.png" alt="Honeyfund Logo">
 					</div>
 					<div class="button">Go to registry <img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/carrot-right.png"> </div>
 				</a>
