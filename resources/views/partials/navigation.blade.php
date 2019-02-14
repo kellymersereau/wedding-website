@@ -13,7 +13,7 @@
 							@foreach($primary_urls as $primary_url)
 								@if($primary_url['url'] === '/wedding-details')
 								<li class="subnav-hover-link" id="wedding-details-link" data-subnav="details-link">
-									<a href="{{ $primary_url['url'] }}" class="{{ ! empty($page_url) && $page_url === $primary_url['url'] || $page_url === '/wedding-details/accommodations' || $page_url === '/wedding-details/other-events' ? "active" : "" }}" title="{{ $primary_url['label'] }}">
+									<a href="{{ $primary_url['url'] }}" class="{{ ! empty($page_url) && $page_url === $primary_url['url'] || ! empty($page_url) && $page_url === '/wedding-details/accommodations' || ! empty($page_url) && $page_url === '/wedding-details/other-events' ? "active" : "" }}" title="{{ $primary_url['label'] }}">
 										{!! $primary_url['nav-text'] !!}
 										<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/carrot-down.png">
 									</a>

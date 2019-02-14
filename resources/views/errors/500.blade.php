@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('title')
-	404 - Page Not Found
+	500 - Internal Server Error
 @endsection
 
 @section('content')
@@ -13,13 +13,12 @@
 			</h1>
 		</div>
 	</div>
-	
 	<div class="content no-padding-top" id="error-page">
 		<div class="line-break first"></div>
 		<div class="copy-wrapper">
-			<h2>page not found!</h2>
+			<h2>internal server error!</h2>
 			<p>
-				We're sorry! The page you are looking for cannot be found. Please return to the homepage using the link below or use the navigation at the top of the page to browse the rest of the site.
+				We're sorry! Most likely, there is a temporary communication problem and the service timed-out. Please return to the homepage using the link below or use the navigation at the top of the page to browse the rest of the site.
 			</p>
 		</div>
 		<div class="button-container single-btn">

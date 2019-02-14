@@ -6,111 +6,12 @@
 			color: $grey;
 		}
 	}
-	.button-container {
-		padding: 0 0 10px;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
-		box-sizing: border-box;
-		.button-wrapper {
-			flex: 0 0 100%;
-			a {
-				margin: 5px 0 15px;
-				box-sizing: border-box;
-				border: 2px solid $med-purple;
-				box-shadow: 0 3px 6px 0 $light-grey;
-				height: 100%;
-				width: 100%;
-				text-decoration: none;
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content: space-between;
-				align-content: center;
-				align-items: center;
-				padding: 20px 20px 15px;
-				background-image: url('https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg');
-				background-size: 125%;
-				background-repeat: no-repeat;
-				background-position: 0 100%;
-				background-color: $med-purple;
-				transition: all 0.25s ease-in;
-				cursor: pointer;
-				opacity: 0.9;
-				p {
-					padding-bottom: 0;
-					font-family: $BebasNeue-Bold;
-					color: $white;
-					font-size: 1.75em;
-					line-height: 1;
-					letter-spacing: 1.5px;
-				}
-				&:hover {
-					border-color: $white;
-					opacity: 0.6;
-					text-decoration: none;
-					outline: none;
-				}
-			}
-		}
-	}
-}
-@media(min-width: 400px){
-	.cta-wrapper {
-		.button-container {
-			.button-wrapper {
-				a {
-					p {
-						font-size: 2.2em;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media(min-width: 600px){
-	.cta-wrapper {
-		.button-container {
-			justify-content: space-between;
-			max-width: 1024px;
-			margin: 0 auto;
-			.button-wrapper {
-				flex: 0 0 49%;
-				a {
-					max-width: 350px;
-					margin: 5px auto 15px;
-					p {
-						font-size: 1.85em;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media(min-width: 700px){
-	.cta-wrapper {
-		.button-container {
-			.button-wrapper {
-				a {
-					p {
-						font-size: 2em;
-					}
-				}
-			}
-		}
-	}
 }
 
 @media (min-width: 1024px){
 	.cta-wrapper {
 		h2 {
 			padding-bottom: 10px;
-		}
-		.button-container {
-			max-width: 75%;
 		}
 	}
 }

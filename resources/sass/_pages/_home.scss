@@ -66,11 +66,11 @@
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
-		padding: 20px 0;
+		padding: 20px 10px;
 		h1 {
 			font-family: $BebasNeue-Bold;
 			color: $dark-purple;
-			font-size: 3em;
+			font-size: 2.75em;
 			line-height: .75;
 			letter-spacing: 1px;
 			padding: 0;
@@ -86,7 +86,7 @@
 		p {
 			font-family: $Roboto-Light;
 			color: $dark-grey;
-			font-size: 1.5em;
+			font-size: 1.25em;
 			line-height: 1;
 			padding: 0;
 			text-align: center;
@@ -95,6 +95,18 @@
 	}
 }
 
+@media(min-width: 360px){
+	.home {
+		.details-wrapper {
+			h1 {
+				font-size: 3em;
+			}
+			p {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
 @media(min-width: 500px){
 	.home {
 		.hero {
