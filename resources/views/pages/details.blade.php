@@ -26,7 +26,7 @@
 		</h2>
 		<div class="copy-group">
 			<p>
-				<span class="bold">Where:</span> The roof
+				<span class="bold">Where:</span> The roof of The Berkeley Oceanfront Hotel
 			</p>
 			<p class="padding-bottom">
 				<span class="bold">What time:</span> 5:30pm
@@ -38,7 +38,7 @@
 		
 		<div class="line-break light"></div>
 		<h2>
-			Reception
+			Cocktail Hour
 		</h2>
 		<div class="copy-group">
 			<p>
@@ -48,9 +48,25 @@
 				<span class="bold">What time:</span> 6:00pm
 			</p>
 			<p>
-				Our reception will take place on the mezzanine level of The Berkeley Hotel, with cocktail hour starting immediately after the ceremony.
+                Immediately after the ceremony, we will have cocktail hour on the mezzanine level of The Berkeley Oceanfront Hotel.
 			</p>
 		</div>
+
+        <div class="line-break light"></div>
+        <h2>
+            Reception
+        </h2>
+        <div class="copy-group">
+            <p>
+                <span class="bold">Where:</span> The mezzanine level
+            </p>
+            <p class="padding-bottom">
+                <span class="bold">What time:</span> 7:00pm
+            </p>
+            <p>
+                Dinner, dancing and drinks will follow the cocktail hour in the ballroom adjacent to the cocktail hour room.  Be prepared get wild on the dance floor and help us celebrate this delightful union by drinking and dancing the night away.
+            </p>
+        </div>
 		
 		<div class="line-break light"></div>
 		<h2>

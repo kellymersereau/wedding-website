@@ -34,16 +34,19 @@ const imageminPngcrush = require('imagemin-pngcrush');
  |
  */
 
-mix.scripts([
+mix
+    .scripts([
 		'resources/js/navigation.js',
 		'resources/js/imageslider.js',
 		'resources/js/init.js'
-	], 'public/js/app.js')
+	], 'public/js/app.js');
+mix
    .js('resources/js/maps.js', 'public/js/')
    .js('resources/js/vendor/bootstrap.js', 'public/js/')
    .sass('resources/sass/app.scss', 'public/css', {
-		outputStyle: 'nested'
-	});
+       precision: 5,
+       sourceComments: true
+   }).sourceMaps();
 
 
 mix.then(() => {

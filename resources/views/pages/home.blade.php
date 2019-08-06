@@ -27,7 +27,8 @@
 		</div>
 	</div>
 	<div class="opening-img-wrapper">
-		<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-59.jpg">
+        <div class="line-break no-margin-top"></div>
+{{--		<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/images/Me-59.jpg">--}}
 	</div>
 	
 	<div class="details-wrapper">

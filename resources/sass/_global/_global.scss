@@ -126,6 +126,10 @@ p {
 	}
 }
 
+.no-margin-top {
+    margin-top: 0;
+}
+
 @media(min-width: 600px){
 	.content-wrapper {
 		.content {

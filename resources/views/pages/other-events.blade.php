@@ -13,27 +13,15 @@
 	<div class="content no-padding-top">
 		<div class="line-break first"></div>
 		
-		<p class="max-width-75">
-			We've decided that one day of fun just isn't enough for us, so we're planning a few additional events on Saturday for those of you who plan on staying in Asbury Park for the weekend.
-		</p>
-		
-		<div class="line-break light"></div>
+{{--		<p class="max-width-75">--}}
+{{--			We've decided that one day of fun just isn't enough for us, so we're planning a few additional events on Saturday for those of you who plan on staying in Asbury Park for the weekend.--}}
+{{--		</p>--}}
+{{--		--}}
+{{--		<div class="line-break light"></div>--}}
 		
 		<h2 class="center">
 			Saturday October 12<sup>th</sup>
 		</h2>
-		<div class="event-wrapper">
-			<h3>Breakfast</h3>
-			<p>
-				We're still figuring out the exact details of the breakfast, but we will figure it out soon.  This will be updated within the next couple of months with exact details.
-			</p>
-			<p>
-				<span class="bold">Time:</span> Between 8am &amp; 11am
-			</p>
-			<p>
-				<span class="bold">Where:</span> The Berkeley Hotel restaurant
-			</p>
-		</div>
 		
 		<div class="event-wrapper">
 			<h3>Post-Wedding Bar Crawl</h3>

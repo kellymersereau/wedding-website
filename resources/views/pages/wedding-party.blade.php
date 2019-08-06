@@ -67,18 +67,18 @@
 							Fraternity brother
 						</p>
 					</li>
-					{{--<li>--}}
-						{{--<h3>Nick Caliendo<span>&ndash; Groomsman</span></h3>--}}
-						{{--<p class="small">--}}
-							{{--Future brother-in-law--}}
-						{{--</p>--}}
-					{{--</li>--}}
-					{{--<li>--}}
-						{{--<h3>Groomsman <span>&ndash; Groomsman</span></h3>--}}
-						{{--<p class="small">--}}
-							{{--Groomsman--}}
-						{{--</p>--}}
-					{{--</li>--}}
+					<li>
+						<h3>Nick Caliendo<span>&ndash; Groomsman</span></h3>
+						<p class="small">
+							Brother-in-law
+						</p>
+					</li>
+					<li>
+						<h3>Michael Hennessey <span>&ndash; Groomsman</span></h3>
+						<p class="small">
+							Future brother-in-law
+						</p>
+					</li>
 				</ul>
 			</div>
 		</div>
