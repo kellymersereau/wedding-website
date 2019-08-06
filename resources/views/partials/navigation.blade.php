@@ -5,7 +5,7 @@
 				<li class="link-list">
 					<div class="logo-wrapper">
 						<a href="/" title="Home">
-							<img src="https://s3.amazonaws.com/kellyandbrianwedding.com/icons/nav-icon.png">
+                            <img src="/img/icons/heart.png">
 						</a>
 					</div>
 					<div class="link-list-wrapper">

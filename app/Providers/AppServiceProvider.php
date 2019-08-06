@@ -33,10 +33,10 @@ class AppServiceProvider extends ServiceProvider
 		    [ 'url'       => '/registry',
 			    'label'     => 'Gift Registry Information',
 			    'nav-text'  => 'Gift Registry' ],
-		
-		    [ 'url'       => '/rsvp',
-			    'label'     => 'RSVP to our wedding',
-			    'nav-text'  => 'RSVP']
+
+//		    [ 'url'       => '/rsvp',
+//			    'label'     => 'RSVP to our wedding',
+//			    'nav-text'  => 'RSVP']
 	
 	    ];
 	

@@ -12,7 +12,10 @@
 
 	<div class="content no-padding-top">
 		<div class="line-break first"></div>
-		
+
+        <h2 class="center">
+            We have registries at the following stores:
+        </h2>
 		<div class="flex-wrapper">
 			<div class="flex-link">
 				<a href="https://www.wayfair.com/registry/wedding/KellyAndBrian10.11.2019" target="_blank" norelopener>

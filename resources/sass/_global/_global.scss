@@ -95,7 +95,7 @@ p {
 	.bold {
 		font-family: $BebasNeue-Bold;
 		font-size: 1.25em;
-		line-height: 1.25;
+		line-height: 1;
 		font-weight: bold;
 		color: $grey;
 		padding: 0;
@@ -116,6 +116,7 @@ p {
 	height: 5px;
 	background-image: url('https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg');
 	margin: 40px 0;
+    opacity: 0.65;
 	&.first {
 		margin: 30px 0 40px;
 	}
@@ -125,6 +126,34 @@ p {
 		background-color: $light-grey;
 	}
 }
+
+.line-break-home {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    display: none;
+    .lb-line {
+        width: 50%;
+        height: 3px;
+        margin: 20px 0;
+        background: $light-purple;
+        opacity: 0.75;
+        border-radius: 2px;
+    }
+    .lb-img {
+        flex: 0 0 30px;
+        padding: 0 3px;
+        box-sizing: border-box;
+        img {
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
 
 .no-margin-top {
     margin-top: 0;
@@ -165,4 +194,17 @@ p {
 			line-height: 1rem;
 		}
 	}
+}
+
+@media(min-width: 800px){
+    .line-break-home {
+        display: flex;
+        padding: 0 20px;
+    }
+}
+
+@media(min-width: 1034px){
+    .line-break-home {
+        padding: 0;
+    }
 }

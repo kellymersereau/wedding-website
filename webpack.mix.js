@@ -1,27 +1,6 @@
 const mix = require('laravel-mix');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const imageminMozjpeg = require('imagemin-mozjpeg');
 const minifier = require('minifier');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const imageminPngcrush = require('imagemin-pngcrush');
 
-// mix.webpackConfig({
-// 	plugins: [
-// 		new CopyWebpackPlugin([{
-// 			from: 'resources/img/**/*',
-// 			to: '/img/' // Laravel mix will place this in 'public/img'
-// 		}]),
-// 		new ImageminPlugin({
-// 			test: /\.(jpe?g|png|gif|svg)$/i,
-// 			plugins: [
-// 				imageminMozjpeg({
-// 					quality: 80
-// 				}),
-// 				imageminPngcrush()
-// 			]
-// 		})
-// 	]
-// });
 
 /*
  |--------------------------------------------------------------------------
@@ -37,7 +16,7 @@ const imageminPngcrush = require('imagemin-pngcrush');
 mix
     .scripts([
 		'resources/js/navigation.js',
-		'resources/js/imageslider.js',
+		'resources/js/countdown.js',
 		'resources/js/init.js'
 	], 'public/js/app.js');
 mix
@@ -47,7 +26,7 @@ mix
        precision: 5,
        sourceComments: true
    }).sourceMaps();
-
+mix.copyDirectory('resources/img', 'public/img');
 
 mix.then(() => {
 	minifier.minify('public/css/app.css'),

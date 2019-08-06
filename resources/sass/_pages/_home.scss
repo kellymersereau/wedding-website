@@ -4,11 +4,6 @@
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: center;
-		align-content: center;
-		align-items: center;
 		position: relative;
 		padding: 25px 0 10px;
 		.header-text {
@@ -19,7 +14,12 @@
 			align-content: center;
 			width: 100%;
 			padding: 0 20px;
+            box-sizing: border-box;
 			.text-wrapper {
+                flex: 0 0 20%;
+                &.small {
+                    flex: 0 0 85px;
+                }
 				h1 {
 					font-family: $BebasNeue-Light;
 					color: $dark-purple;
@@ -49,50 +49,127 @@
 			}
 		}
 	}
-	.opening-img-wrapper {
-		width: 100%;
-		height: auto;
-		display: block;
-		box-sizing: border-box;
-		text-align: center;
-		max-width: 768px;
-		margin: 0 auto 20px;
-		img {
-			max-width: 100%;
-			max-height: 100%;
-		}
-	}
+
+    .intro-wrapper {
+        position: relative;
+        max-width: 1024px;
+        height: 250px;
+        margin: 0 auto;
+        background-image: url("/img/photos/engagement/Me-24.jpg");
+        background-size: contain;
+        background-position: 65% 52%;
+        opacity: 0.85;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 1.95em;
+            color: $white;
+            z-index: 300;
+            width: 100%;
+            opacity: 1;
+            padding: 0 20px;
+            padding-top: 50px;
+            span {
+                color: $light-purple;
+            }
+        }
+        .img-wrapper {
+            opacity: 0.75;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
 	.details-wrapper {
 		box-sizing: border-box;
 		width: 100%;
-		max-width: 1024px;
+		max-width: 768px;
 		margin: 0 auto;
-		padding: 20px 10px;
-		h1 {
-			font-family: $BebasNeue-Bold;
-			color: $dark-purple;
-			font-size: 2.75em;
-			line-height: .75;
-			letter-spacing: 1px;
-			padding: 0;
-			margin: 0;
-			text-align: center;
-			padding-bottom: 10px;
-			sup {
-				font-size: 26px;
-				line-height: 26px;
-				vertical-align: text-top;
-			}
-		}
-		p {
-			font-family: $Roboto-Light;
-			color: $dark-grey;
-			font-size: 1.25em;
-			line-height: 1;
-			padding: 0;
-			text-align: center;
-			margin: 0;
-		}
+		padding: 20px 10px 0;
+        .copy-wrapper {
+            padding: 10px 0;
+            h3 {
+                padding: 20px 10px 10px;
+                text-align: center;
+                color: $dark-purple;
+                font-size: 2.25em;
+            }
+            p {
+                padding-bottom: 20px;
+                font-size: 1em;
+                span.bold {
+                    font-family: $BebasNeue-Bold;
+                    color: $activePurple;
+                    display: block;
+                    font-size: 1.5em;
+                    letter-spacing: 1px;
+                }
+                a {
+                    color: $light-purple;
+                    font-family: $Roboto-Regular;
+                    &:hover {
+                        color: $hoverPurple;
+                    }
+                    &:focus {
+                        color: $light-purple;
+                    }
+                }
+            }
+        }
+        .date-wrapper {
+            padding: 40px 0 0;
+            h2 {
+                color: $dark-grey;
+                text-align: center;
+                font-size: 1.65em;
+                line-height: 1;
+            }
+            h3 {
+                color: $light-purple;
+                text-align: center;
+                font-size: 1.25em;
+                line-height: 1;
+            }
+            p{
+                color: $dark-purple;
+                text-align: center;
+                font-size: 0.85em;
+                line-height: 1;
+            }
+        }
+        .spotify-wrapper {
+            margin: 0 auto;
+            width: auto;
+            padding: 5px;
+            border: 2px solid $med-purple;
+            box-shadow: 1px 1px 30px 0 $light-grey;
+            border-radius: 3px;
+            h3 {
+                line-height: 1;
+                padding: 10px 10px 0;
+                text-align: center;
+                color: $light-purple;
+            }
+            p {
+                font-size: 1em;
+                color: $dark-grey;
+                font-family: $Roboto-Light;
+                text-align: left;
+                padding: 10px;
+            }
+            .spotify-playlist {
+                width: 100%;
+                max-width: 680px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
 	}
 }
 
@@ -102,11 +179,15 @@
 			h1 {
 				font-size: 3em;
 			}
-			p {
-				font-size: 1.5em;
-			}
 		}
 	}
+}
+@media(min-width: 450px){
+    .home {
+        .intro-wrapper {
+            background-size: cover;
+        }
+    }
 }
 @media(min-width: 500px){
 	.home {
@@ -114,7 +195,7 @@
 			.header-text {
 				.text-wrapper {
 					h1 {
-						margin: 20px 0;
+						margin: 20px 0 10px;
 						font-size: 3em;
 						&.and {
 							font-size: 6.25em;
@@ -138,7 +219,9 @@
 			.header-text {
 				.text-wrapper {
 					h1 {
+                        margin: 20px 0 0;
 						padding-left: 20px;
+                        padding-bottom: 0;
 						font-size: 3.5em;
 						&.right {
 							padding-right: 20px;
@@ -151,6 +234,9 @@
 			h1 {
 				font-size: 4em;
 			}
+            .spotify-wrapper {
+                padding: 10px;
+            }
 		}
 	}
 }
@@ -161,6 +247,14 @@
 			h1 {
 				font-size: 4.5em;
 			}
+            .spotify-wrapper {
+                padding: 20px;
+            }
 		}
+        .intro-wrapper {
+            h3 {
+                padding-top: 0;
+            }
+        }
 	}
 }

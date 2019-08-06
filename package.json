@@ -12,13 +12,8 @@
     "devDependencies": {
         "ajv": "^6.10.0",
         "axios": "^0.18",
-        "copy-webpack-plugin": "^4.4.1",
         "cross-env": "^5.1",
         "gsap": "^1.20.2",
-        "imagemin": "^5.3.1",
-        "imagemin-mozjpeg": "^8.0.0",
-        "imagemin-pngcrush": "^6.0.0",
-        "imagemin-webpack-plugin": "^2.4.2",
         "jquery": "^3.4.1",
         "laravel-mix": "^4.0.15",
         "lodash": "^4.17.5",

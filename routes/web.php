@@ -25,7 +25,7 @@ Route::get('/wedding-party', 'PageController@weddingParty');
 
 Route::get('/registry', 'PageController@registry');
 
-Route::get('/rsvp', 'PageController@rsvp');
+//Route::get('/rsvp', 'PageController@rsvp');
 
 Route::get('/sitemap.xml', function(){
 	return response()->view('sitemap')->header('Content-Type', 'text/xml');

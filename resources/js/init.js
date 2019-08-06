@@ -1,10 +1,11 @@
 var main = {
 	init: function (){
 		navigation.init();
-		
-		if ( $('body').hasClass('our-story') ) {
-			imageslider.init();
-		}
+		countdown.init();
+
+		if ( $('body').hasClass('home') ) {
+
+        }
 	}
 }
 

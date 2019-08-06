@@ -146,7 +146,7 @@ p sup {
 p .bold {
   font-family: "BebasNeue-Bold", sans-serif;
   font-size: 1.25em;
-  line-height: 1.25;
+  line-height: 1;
   font-weight: bold;
   color: #4e5357;
   padding: 0;
@@ -167,6 +167,7 @@ p .bold {
   height: 5px;
   background-image: url("https://s3.amazonaws.com/kellyandbrianwedding.com/background-imgs/purple-sky.jpg");
   margin: 40px 0;
+  opacity: 0.65;
 }
 
 .line-break.first {
@@ -177,6 +178,36 @@ p .bold {
   height: 1px;
   background-image: none;
   background-color: #cacaca;
+}
+
+.line-break-home {
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  display: none;
+}
+
+.line-break-home .lb-line {
+  width: 50%;
+  height: 3px;
+  margin: 20px 0;
+  background: #a192a5;
+  opacity: 0.75;
+  border-radius: 2px;
+}
+
+.line-break-home .lb-img {
+  flex: 0 0 30px;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+.line-break-home .lb-img img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .no-margin-top {
@@ -218,6 +249,19 @@ p .bold {
   h3 sup {
     font-size: 1rem;
     line-height: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .line-break-home {
+    display: flex;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1034px) {
+  .line-break-home {
+    padding: 0;
   }
 }
 
@@ -318,13 +362,17 @@ footer .footer-wrapper p a:focus {
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   text-decoration: none;
+  height: 50px;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a img {
-  max-width: 100%;
+  max-width: 75%;
   max-height: 100%;
+  height: auto;
 }
 
 .nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper a:hover {
@@ -545,11 +593,13 @@ footer .footer-wrapper p a:focus {
 
   .nav-wrapper nav .main-nav-wrapper ul li.link-list {
     max-width: 100%;
-    margin: 0 40px;
+    margin: 0 30px;
   }
 
   .nav-wrapper nav .main-nav-wrapper ul li.link-list .logo-wrapper {
-    display: none;
+    width: auto;
+    flex: 0 0 60px;
+    padding-right: 10px;
   }
 
   .nav-wrapper nav .main-nav-wrapper ul li.link-list .link-list-wrapper {
@@ -591,6 +641,10 @@ footer .footer-wrapper p a:focus {
 
 .accommodations .content .hotel-wrapper .text-wrapper p.details {
   padding: 20px 0;
+}
+
+.accommodations .content .hotel-wrapper .text-wrapper p.no-padding-top {
+  padding-top: 0;
 }
 
 .accommodations .content .hotel-wrapper .text-wrapper p.address {
@@ -844,11 +898,6 @@ footer .footer-wrapper p a:focus {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   position: relative;
   padding: 25px 0 10px;
 }
@@ -861,6 +910,15 @@ footer .footer-wrapper p a:focus {
   align-content: center;
   width: 100%;
   padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.home .hero .header-text .text-wrapper {
+  flex: 0 0 20%;
+}
+
+.home .hero .header-text .text-wrapper.small {
+  flex: 0 0 85px;
 }
 
 .home .hero .header-text .text-wrapper h1 {
@@ -893,70 +951,162 @@ footer .footer-wrapper p a:focus {
   padding-left: 0;
 }
 
-.home .opening-img-wrapper {
-  width: 100%;
-  height: auto;
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  max-width: 768px;
-  margin: 0 auto 20px;
+.home .intro-wrapper {
+  position: relative;
+  max-width: 1024px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url("/img/photos/engagement/Me-24.jpg");
+  background-size: contain;
+  background-position: 65% 52%;
+  opacity: 0.85;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.home .opening-img-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
+.home .intro-wrapper h3 {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.95em;
+  color: #ffffff;
+  z-index: 300;
+  width: 100%;
+  opacity: 1;
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
+.home .intro-wrapper h3 span {
+  color: #a192a5;
+}
+
+.home .intro-wrapper .img-wrapper {
+  opacity: 0.75;
+}
+
+.home .intro-wrapper .img-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 .home .details-wrapper {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1024px;
+  max-width: 768px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 10px 0;
 }
 
-.home .details-wrapper h1 {
-  font-family: "BebasNeue-Bold", sans-serif;
-  color: #422e4d;
-  font-size: 2.75em;
-  line-height: 0.75;
-  letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
+.home .details-wrapper .copy-wrapper {
+  padding: 10px 0;
+}
+
+.home .details-wrapper .copy-wrapper h3 {
+  padding: 20px 10px 10px;
   text-align: center;
-  padding-bottom: 10px;
+  color: #422e4d;
+  font-size: 2.25em;
 }
 
-.home .details-wrapper h1 sup {
-  font-size: 26px;
-  line-height: 26px;
-  vertical-align: text-top;
+.home .details-wrapper .copy-wrapper p {
+  padding-bottom: 20px;
+  font-size: 1em;
 }
 
-.home .details-wrapper p {
-  font-family: "Roboto-Light", sans-serif;
+.home .details-wrapper .copy-wrapper p span.bold {
+  font-family: "BebasNeue-Bold", sans-serif;
+  color: #a5849f;
+  display: block;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.home .details-wrapper .copy-wrapper p a {
+  color: #a192a5;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.home .details-wrapper .copy-wrapper p a:hover {
+  color: #593F68;
+}
+
+.home .details-wrapper .copy-wrapper p a:focus {
+  color: #a192a5;
+}
+
+.home .details-wrapper .date-wrapper {
+  padding: 40px 0 0;
+}
+
+.home .details-wrapper .date-wrapper h2 {
   color: #2B2B2B;
+  text-align: center;
+  font-size: 1.65em;
+  line-height: 1;
+}
+
+.home .details-wrapper .date-wrapper h3 {
+  color: #a192a5;
+  text-align: center;
   font-size: 1.25em;
   line-height: 1;
-  padding: 0;
+}
+
+.home .details-wrapper .date-wrapper p {
+  color: #422e4d;
   text-align: center;
-  margin: 0;
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+.home .details-wrapper .spotify-wrapper {
+  margin: 0 auto;
+  width: auto;
+  padding: 5px;
+  border: 2px solid #845772;
+  box-shadow: 1px 1px 30px 0 #cacaca;
+  border-radius: 3px;
+}
+
+.home .details-wrapper .spotify-wrapper h3 {
+  line-height: 1;
+  padding: 10px 10px 0;
+  text-align: center;
+  color: #a192a5;
+}
+
+.home .details-wrapper .spotify-wrapper p {
+  font-size: 1em;
+  color: #2B2B2B;
+  font-family: "Roboto-Light", sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+
+.home .details-wrapper .spotify-wrapper .spotify-playlist {
+  width: 100%;
+  max-width: 680px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 360px) {
   .home .details-wrapper h1 {
     font-size: 3em;
   }
+}
 
-  .home .details-wrapper p {
-    font-size: 1.5em;
+@media (min-width: 450px) {
+  .home .intro-wrapper {
+    background-size: cover;
   }
 }
 
 @media (min-width: 500px) {
   .home .hero .header-text .text-wrapper h1 {
-    margin: 20px 0;
+    margin: 20px 0 10px;
     font-size: 3em;
   }
 
@@ -975,7 +1125,9 @@ footer .footer-wrapper p a:focus {
   }
 
   .home .hero .header-text .text-wrapper h1 {
+    margin: 20px 0 0;
     padding-left: 20px;
+    padding-bottom: 0;
     font-size: 3.5em;
   }
 
@@ -986,11 +1138,23 @@ footer .footer-wrapper p a:focus {
   .home .details-wrapper h1 {
     font-size: 4em;
   }
+
+  .home .details-wrapper .spotify-wrapper {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 768px) {
   .home .details-wrapper h1 {
     font-size: 4.5em;
+  }
+
+  .home .details-wrapper .spotify-wrapper {
+    padding: 20px;
+  }
+
+  .home .intro-wrapper h3 {
+    padding-top: 0;
   }
 }
 
@@ -1179,6 +1343,7 @@ footer .footer-wrapper p a:focus {
   color: #845772;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  opacity: 0.85;
 }
 
 .hero .clipped-title h1 {

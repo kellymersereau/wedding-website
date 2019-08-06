@@ -29,8 +29,4 @@
 		<loc>http://www.kellyandbrianwedding.com/registry</loc>
 		<priority>1.00</priority>
 	</url>
-	<url>
-		<loc>http://www.kellyandbrianwedding.com/rsvp</loc>
-		<priority>0.80</priority>
-	</url>
 </urlset>
