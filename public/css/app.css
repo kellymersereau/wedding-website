@@ -154,6 +154,10 @@ p .bold {
   letter-spacing: 1.5px;
 }
 
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
 .left {
   text-align: left;
 }
@@ -819,7 +823,7 @@ footer .footer-wrapper p a:focus {
 .registry .content .flex-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   align-items: center;
 }
@@ -838,8 +842,7 @@ footer .footer-wrapper p a:focus {
   height: 225px;
   width: 100%;
   background: white;
-  border: 1px solid #cacaca;
-  box-shadow: 1px 2px 3px #4e5357;
+  border: 1px solid #a192a5;
   border-radius: 3px;
   text-decoration: none;
   padding: 10px;
@@ -872,9 +875,12 @@ footer .footer-wrapper p a:focus {
   padding-left: 10px;
 }
 
+.registry .content .flex-wrapper .flex-link a:hover {
+  border-width: 2px;
+}
+
 .registry .content .flex-wrapper .flex-link a:hover .button {
   color: #593F68;
-  border-bottom: 2px solid #593F68;
 }
 
 .registry .content .flex-wrapper .flex-link a:hover .button img {

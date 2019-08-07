@@ -4,7 +4,7 @@
 		 .flex-wrapper {
 			 display: flex;
 			 flex-flow: row wrap;
-			 justify-content: space-between;
+			 justify-content: space-evenly;
 			 align-content: center;
 			 align-items: center;
 			 .flex-link {
@@ -19,8 +19,7 @@
 					 height: 225px;
 					 width: 100%;
 					 background: white;
-					 border: 1px solid $light-grey;
-					 box-shadow: 1px 2px 3px $grey;
+					 border: 1px solid $light-purple;
 					 border-radius: 3px;
 					 text-decoration: none;
 					 padding: 10px;
@@ -48,9 +47,9 @@
 						 }
 					 }
 					 &:hover {
+						 border-width: 2px;
 						 .button {
 							 color: $hoverPurple;
-							 border-bottom: 2px solid $hoverPurple;
 							 img {
 								 animation: shake-horizontal 1.5s linear infinite both;
 							 }
