@@ -34,13 +34,10 @@
 			<p>
 				<span class="bold">Where:</span> Asbury Park
 			</p>
-			<p>
-				<span class="bold">Theme:</span> TBD
-			</p>
 			<p class="no-padding-bottom">
 				<span class="bold">Bars in order:</span>
 			</p>
-			<ol class="non-nav-list">
+			<ul class="non-nav-list">
 				<li>
 					Asbury Lanes
 				</li>
@@ -62,7 +59,7 @@
 				<li>
 					Johnny Macs
 				</li>
-			</ol>
+			</ul>
 		</div>
 		
 		<div class="line-break"></div>
