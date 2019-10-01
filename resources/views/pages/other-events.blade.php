@@ -28,8 +28,11 @@
 			<p>
 				We're still hammering out the details, but we really want to do a bar crawl.  There are a ton of awesome bars and breweries in Asbury Park so it's a perfect place to have a mid-afternoon, post-wedding bar crawl.  We're also toying with the idea of having a themed bar crawl for the sole reason that me and Brian really enjoy themed events.  So stay the weekend and frolic around Asbury with us!
 			</p>
+      <p>
+        We will probably spend about an hour at each bar, but maybe more time, maybe less time depending on the amount of fun we are having.  Aim to meet us at Asbury Lanes at 2:00 PM and we'll take it from there.  If you're going to meet up with us later or at a different bar, then text or call me or Brian to find out where we are.
+      </p>
 			<p>
-				<span class="bold">Time:</span> Probably around 2pm
+				<span class="bold">Time:</span> 2:00 PM
 			</p>
 			<p>
 				<span class="bold">Where:</span> Asbury Park
@@ -45,7 +48,7 @@
 					Wonder Bar
 				</li>
 				<li>
-					Brickwall
+					Brickwall Tavern
 				</li>
 				<li>
 					Asbury Festhalle & Biergarten
