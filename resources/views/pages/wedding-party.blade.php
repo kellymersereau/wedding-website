@@ -22,7 +22,7 @@
 						</p>
 					</li>
 					<li>
-						<h3>Jackie Taylor <span>&ndash; Bridesmaid</span></h3>
+						<h3>Jackie Caliendo <span>&ndash; Bridesmaid</span></h3>
 						<p class="small">
 							Sister of groom
 						</p>

@@ -30,9 +30,12 @@
 				<p class="details">
 					For guests wishing to stay in Asbury Park, we have reserved a block of rooms at The Berkeley Hotel. Please mention the Mersereau/Taylor wedding when calling to make your reservation.
 				</p>
-                <p class="details no-padding-top">
-                    <span class="bold">NOTE:</span> If you are planning on staying at The Berkeley on Thursday or Saturday and are booking within the room block, please note the room block rate is <b>only</b> for Friday night.  When calling to book your room for multiple nights, you need to tell The Berkeley that you understand the room block rate is only for Friday, but you wish to book anyway.
-                </p>
+				<p>
+					<span class="bold">As of 9/20/2019, the room block is officially closed so all last minute reservations will have the regular nightly rate for the hotel.  We suggest booking a last minute room online as it tends to be cheaper.</span>
+				</p>
+				<p class="details">
+					<span class="bold">NOTE:</span> If you are planning on staying at The Berkeley on Thursday or Saturday and are booking within the room block, please note the room block rate is <b>only</b> for Friday night.  When calling to book your room for multiple nights, you need to tell The Berkeley that you understand the room block rate is only for Friday, but you wish to book anyway.
+				</p>
 			</div>
 			<div class="map-wrapper">
 				<div id="map"></div>

@@ -38,22 +38,31 @@
 				<span class="bold">Theme:</span> TBD
 			</p>
 			<p class="no-padding-bottom">
-				<span class="bold">Bars:</span>
+				<span class="bold">Bars in order:</span>
 			</p>
-			<ul class="non-nav-list">
+			<ol class="non-nav-list">
 				<li>
-					Johnny Macs
-				</li>
-				<li>
-					Bond Street
+					Asbury Lanes
 				</li>
 				<li>
 					Wonder Bar
 				</li>
 				<li>
-					More TBD
+					Brickwall
 				</li>
-			</ul>
+				<li>
+					Asbury Festhalle & Biergarten
+				</li>
+				<li>
+					Capitoline
+				</li>
+				<li>
+					Bond Street Bar
+				</li>
+				<li>
+					Johnny Macs
+				</li>
+			</ol>
 		</div>
 		
 		<div class="line-break"></div>

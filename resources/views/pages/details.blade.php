@@ -31,9 +31,12 @@
 			<p class="padding-bottom">
 				<span class="bold">What time:</span> 5:30pm
 			</p>
-			<p>
+			<p class="padding-bottom">
 				Our ceremony will take place on the roof of The Berkeley Hotel at 5:30pm <span class="bold">sharp</span>.  To get to the roof, go to the mezzanine level of the hotel and take the center elevator up to the roof.  There is only one elevator that goes to the roof, so please come early to make sure you are able to get to the ceremony on time.
 			</p>
+      <p>
+        <span class="bold">NOTE:</span> If it rains or is too windy the day of the wedding, the ceremony will be moved inside to the Continental room located on the Mezzanine level of the hotel to the left of the elevators (if you are looking at the elevators).  The call will be made by noon on the day of the wedding. If the ceremony is being moved inside, there will be people at the Berkeley to direct you to the correct location.
+      </p>
 		</div>
 		
 		<div class="line-break light"></div>
@@ -74,13 +77,13 @@
 		</h2>
 		<div class="copy-group">
 			<p>
-				<span class="bold">Where:</span> Asbury Lanes
-			</p>
+				<span class="bold">Where:</span> Kim Marie's Eat n Drink Away
+      </p>
 			<p class="padding-bottom">
 				<span class="bold">What time:</span> 11:30pm
 			</p>
 			<p>
-				We figured we would take advantage of the location and have our after-party somewhere super cool. Conveniently, the super cool place we were looking for is right around the block from the hotel.  Once the reception has ended we will make our way over to the lanes for some drinking, bowling and more fun.  You can take an Uber or Lyft there if you desire, but it's less than a 5 minute walk away, so we highly suggest walking.
+        Unfortunately Asbury Lanes has a private event the night of our wedding, so we've changed the after party to Kim Marie's, which is located directly behind the Berkeley on Kingsley Avenue.  It is directly behind the hotel so we suggest walking there because an Uber would be a waste of money.  We plan on heading over immediately following the reception so we expect to arrive there sometime between 11 and 11:30.
 			</p>
 		</div>
 		

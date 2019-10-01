@@ -55,7 +55,7 @@
             </p>
             <p>
                 <span class="bold">For guests not staying the night</span>
-                The Berkeley does not have a parking lot for wedding guests, so the best place to park is on the street.  Street parking is relatively easy to find (especially in October) and is inexpensive.  The best way to pay for parking is to download the AsburyPARK App and pay from your phone.  You can also use the meters to pay for parking.  If you do not want to pay for parking you can park on any of the residential streets where paying to park is not required.  Additionall, there are a few parking lots near The Berkeley that are available for use for a fee.
+                The Berkeley does not have a parking lot for wedding guests, so the best place to park is on the street.  Street parking is relatively easy to find (especially in October) and is inexpensive.  The best way to pay for parking is to download the <a href="https://www.asburyparkapp.com/" title="AsburyPARK App">AsburyPARK App</a> and pay from your phone.  You can also use the meters to pay for parking.  If you do not want to pay for parking you can park on any of the residential streets where paying to park is not required.  Additionall, there are a few parking lots near The Berkeley that are available for use for a fee.
             </p>
         </div>
         <div class="spotify-wrapper">
